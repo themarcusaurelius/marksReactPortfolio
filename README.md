@@ -31,12 +31,9 @@ Using it is very simple and it will enable you to refresh you classic looking ap
 
 ## Demo
 
-- [Index Page](https://demos.creative-tim.com/material-kit-pro-react/#/components)
-- [Buttons Section](https://demos.creative-tim.com/material-kit-pro-react/#/components#buttons)
-- [Navigation Section](https://demos.creative-tim.com/material-kit-pro-react/#/components#navigation)
-- [Notifications Section](https://demos.creative-tim.com/material-kit-pro-react/#/components#notifications)
-- [User profile page](https://demos.creative-tim.com/material-kit-pro-react/#/profile-page)
 - [Landing page](https://demos.creative-tim.com/material-kit-pro-react/#/landing-page)
+- [Profile page](https://demos.creative-tim.com/material-kit-pro-react/#/profile-page)
+- [Contact page](https://demos.creative-tim.com/material-kit-pro-react/#/components)
 
 
 ## Documentation
