@@ -21,11 +21,6 @@ Using it is very simple and it will enable you to refresh you classic looking ap
 * [File Structure](#file-structure)
 * [Browser Support](#browser-support)
 * [Resources](#resources)
-* [Reporting Issues](#reporting-issues)
-* [Technical Support or Questions](#technical-support-or-questions)
-* [Licensing](#licensing)
-* [Useful Links](#useful-links)
-
 
 
 
