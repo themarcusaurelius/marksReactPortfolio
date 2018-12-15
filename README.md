@@ -47,51 +47,27 @@ The documentation for the Material Kit PRO React is hosted at [website](https://
 Within this repository you'll find the following directories and files:
 
 ```
-material-kit-pro
+React Portfolio
 .
 ├── CHANGELOG.md
 ├── README.md
 ├── package.json
 ├── .env
-├── Documentation
-│   ├── assets
-│   │   ├── css
-│   │   ├── img
-│   │   │   └── faces
-│   │   └── js
-│   └── tutorial-components.html
 ├── public
-│   ├── favicon.ico
+│   ├── mushroom.ico
 │   ├── index.html
 │   └── manifest.json
 └── src
     ├── assets
     │   ├── img
-    │   │   ├── arrow-left.cur
-    │   │   ├── arrow-right.cur
-    │   │   ├── assets-for-demo
-    │   │   │   ├── example-pages
-    │   │   │   ├── ourClients
-    │   │   │   ├── presentationViewSectionComponent
-    │   │   │   └── sections
-    │   │   │       └── imgs.jsx
-    │   │   ├── examples
-    │   │   ├── faces
-    │   │   ├── flags
-    │   │   └── sections
+    │   │   └── faces
     │   ├── jss
     │   │   ├── material-kit-pro-react
     │   │   │   ├── components
     │   │   │   └── views
-    │   │   │       ├── aboutUsSections
-    │   │   │       ├── blogPostSections
-    │   │   │       ├── blogPostsSections
-    │   │   │       ├── componentsSections
-    │   │   │       ├── ecommerceSections
-    │   │   │       ├── landingPageSections
-    │   │   │       ├── presentationSections
-    │   │   │       ├── pricingSections
-    │   │   │       └── sectionsSections
+    │   │   │       ├── contactUsStyle
+    │   │   │       ├── landingPageStyle
+    │   │   │       └── profilePageStyle
     │   │   └── material-kit-pro-react.jsx
     │   └── scss
     │       ├── core
@@ -165,95 +141,13 @@ material-kit-pro
     ├── routes
     │   └── index.jsx
     └── views
-        ├── AboutUsPage
-        │   ├── AboutUsPage.jsx
-        │   └── Sections
-        │       ├── SectionContact.jsx
-        │       ├── SectionDescription.jsx
-        │       ├── SectionOffice.jsx
-        │       ├── SectionServices.jsx
-        │       └── SectionTeam.jsx
-        ├── BlogPostPage
-        │   ├── BlogPostPage.jsx
-        │   └── Sections
-        │       ├── SectionBlogInfo.jsx
-        │       ├── SectionComments.jsx
-        │       ├── SectionSimilarStories.jsx
-        │       └── SectionText.jsx
-        ├── BlogPostsPage
-        │   ├── BlogPostsPage.jsx
-        │   └── Sections
-        │       ├── SectionImage.jsx
-        │       ├── SectionInterested.jsx
-        │       ├── SectionPills.jsx
-        │       └── SubscribeLine.jsx
-        ├── ComponentsPage
-        │   ├── ComponentsPage.jsx
-        │   └── Sections
-        │       ├── SectionBasics.jsx
-        │       ├── SectionCards.jsx
-        │       ├── SectionCarousel.jsx
-        │       ├── SectionContentAreas.jsx
-        │       ├── SectionFooter.jsx
-        │       ├── SectionJavascript.jsx
-        │       ├── SectionNavbars.jsx
-        │       ├── SectionNotifications.jsx
-        │       ├── SectionPills.jsx
-        │       ├── SectionPreFooter.jsx
-        │       ├── SectionTabs.jsx
-        │       └── SectionTypography.jsx
         ├── ContactUsPage
         │   └── ContactUsPage.jsx
-        ├── EcommercePage
-        │   ├── EcommercePage.jsx
-        │   └── Sections
-        │       ├── SectionBlog.jsx
-        │       ├── SectionLatestOffers.jsx
-        │       └── SectionProducts.jsx
         ├── LandingPage
-        │   ├── LandingPage.jsx
-        │   └── Sections
-        │       ├── SectionProduct.jsx
-        │       ├── SectionTeam.jsx
-        │       └── SectionWork.jsx
-        ├── LoginPage
-        │   └── LoginPage.jsx
-        ├── PresentationPage
-        │   ├── PresentationPage.jsx
-        │   └── Sections
-        │       ├── SectionCards.jsx
-        │       ├── SectionComponents.jsx
-        │       ├── SectionContent.jsx
-        │       ├── SectionDescription.jsx
-        │       ├── SectionExamples.jsx
-        │       ├── SectionFreeDemo.jsx
-        │       ├── SectionOverview.jsx
-        │       ├── SectionPricing.jsx
-        │       └── SectionSections.jsx
-        ├── PricingPage
-        │   ├── PricingPage.jsx
-        │   └── Sections
-        │       ├── SectionFeatures.jsx
-        │       └── SectionPricing.jsx
-        ├── ProductPage
-        │   └── ProductPage.jsx
-        ├── ProfilePage
-        │   └── ProfilePage.jsx
-        ├── SectionsPage
-        │   ├── Sections
-        │   │   ├── SectionBlogs.jsx
-        │   │   ├── SectionContacts.jsx
-        │   │   ├── SectionFeatures.jsx
-        │   │   ├── SectionHeaders.jsx
-        │   │   ├── SectionPricing.jsx
-        │   │   ├── SectionProjects.jsx
-        │   │   ├── SectionTeams.jsx
-        │   │   └── SectionTestimonials.jsx
-        │   └── SectionsPage.jsx
-        ├── ShoppingCartPage
-        │   └── ShoppingCartPage.jsx
-        └── SignupPage
-            └── SignupPage.jsx
+        │   └── LandingPage.jsx
+        └── ProfilePage
+            └── ProfilePage.jsx
+       
 ```
 
 
@@ -266,6 +160,7 @@ material-kit-pro
 ## Resources
 
 + [Material Dashboard Pro React](https://demos.creative-tim.com/material-dashboard-pro-react/#/dashboard)
+
 
 
 
