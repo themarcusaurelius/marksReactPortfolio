@@ -1,6 +1,6 @@
 # [Mark's React Portoflio](https://marksreactportfolio.herokuapp.com/) 
 
-![Product Presentation Image](https://s3.amazonaws.com/creativetim_bucket/products/89/original/opt_mkp_react_thumbnail.jpg)
+![Product Presentation Image]()
 
 
 ## Table of Contents
