@@ -28,6 +28,7 @@ import Parallax from "components/Parallax/Parallax.jsx";
 import Clearfix from "components/Clearfix/Clearfix.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import mark from "assets/img/faces/mark.jpg";
+import clicky from "assets/img/SmashBrosClicky.gif";
 import offTheChain from "assets/img/OTC.gif";
 import friendFinder from "assets/img/FF.gif";
 import quiz from "assets/img/Quiz.gif";
@@ -38,7 +39,7 @@ import Bebop from "assets/img/Bebop.gif";
 import oluEletu from "assets/img/image_placeholder.jpg";
 import clemOnojeghuo from "assets/img/image_placeholder.jpg";
 import mariyaGeorgieva from "assets/img/image_placeholder.jpg";
-import darrenColeshill from "assets/img/image_placeholder.jpg";
+
 
 
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.jsx";
@@ -238,7 +239,7 @@ class ProfilePage extends React.Component {
                                 background
                                 style={{
                                   backgroundImage:
-                                    "url(" + darrenColeshill + ")"
+                                    "url(" + clicky + ")"
                                 }}
                               >
                                 <a href="#mark" />
@@ -252,9 +253,9 @@ class ProfilePage extends React.Component {
                                   >
                                     December 2018
                                   </Badge>
-                                  <a href="#mark">
+                                  <a href="https://clickclicksmash.herokuapp.com/">
                                     <h2 className={classes.cardTitleWhite}>
-                                      React App
+                                      Clicky App
                                     </h2>
                                   </a>
                                 </CardBody>
