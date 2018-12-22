@@ -154,4 +154,4 @@ Facebook: <https://www.facebook.com/profile.php?id=29616235>
 
 Linkedin: 
 
-Instagram: <https://www.instagram.com/CreativeTimOfficial>
+Instagram: 
