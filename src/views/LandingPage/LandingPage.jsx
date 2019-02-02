@@ -49,10 +49,9 @@ class LandingPage extends React.Component {
                 <h1 className={classes.title}>Welcome to my world.</h1>
                 <h4>
                   I've created this site to showcase and document the incredible and life-changing journey
-                  I have been on as a full-stack web developer. Some of my earlier projects may very well scream "amateur",
-                  but I believe their inclusion in this site is necessary to show how my personal style of coding 
-                  has evolved and matured as I continue to advance in this career. 
-                  Here it is in all its rawness. I hope you enjoy! 
+                  I have recently been on as a full-stack web developer. It is amazing to see how my particular style of coding 
+                  continually keeps evolving and maturing as I further advance in this crazy field. Here it is in all its rawness. 
+                  I hope you enjoy! 
                 </h4>
                 <br />
                 <Button

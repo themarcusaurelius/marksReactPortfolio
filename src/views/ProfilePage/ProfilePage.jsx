@@ -8,10 +8,11 @@ import Tooltip from "@material-ui/core/Tooltip";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 // @material-ui/icons
-import Camera from "@material-ui/icons/Camera";
+/* import fullSTack from "@material-ui/icons/laptopMac"; */
+import fullStack from "@material-ui/icons/LaptopMac";
 import Palette from "@material-ui/icons/Palette";
-import People from "@material-ui/icons/People";
 import Add from "@material-ui/icons/Add";
+import Code from "@material-ui/icons/Code"
 
 
 // core components
@@ -32,14 +33,10 @@ import clicky from "assets/img/SmashBrosClicky.gif";
 import offTheChain from "assets/img/OTC.gif";
 import friendFinder from "assets/img/FF.gif";
 import quiz from "assets/img/Quiz.gif";
-import rooted from "assets/img/Rooted.gif";
 import Bamazon from "assets/img/Bamazon.gif";
 import Liri from "assets/img/liri.gif";
 import Bebop from "assets/img/Bebop.gif";
-import oluEletu from "assets/img/image_placeholder.jpg";
-import clemOnojeghuo from "assets/img/image_placeholder.jpg";
-import mariyaGeorgieva from "assets/img/image_placeholder.jpg";
-
+import GreenToad from "assets/img/GreenToad1.gif";
 
 
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.jsx";
@@ -146,8 +143,8 @@ class ProfilePage extends React.Component {
                 color="primary"
                 tabs={[
                   {
-                    tabButton: "React",
-                    tabIcon: Palette,
+                    tabButton: "Full-stack",
+                    tabIcon: fullStack,
                     tabContent: (
                       <GridContainer>
                         <GridItem
@@ -163,7 +160,7 @@ class ProfilePage extends React.Component {
                                 background
                                 style={{
                                   backgroundImage:
-                                    "url(" + mariyaGeorgieva + ")"
+                                    "url(" + GreenToad + ")"
                                 }}
                               >
                                 <a href="#mark" />
@@ -177,9 +174,9 @@ class ProfilePage extends React.Component {
                                   >
                                     January 2019
                                   </Badge>
-                                  <a href="#mark">
+                                  <a href="https://greentoad.herokuapp.com/">
                                     <h2 className={classes.cardTitleWhite}>
-                                      React Project
+                                      GreenToad
                                     </h2>
                                   </a>
                                 </CardBody>
@@ -189,7 +186,7 @@ class ProfilePage extends React.Component {
                               <Card
                                 background
                                 style={{
-                                  backgroundImage: "url(" + clemOnojeghuo + ")"
+                                  backgroundImage: "url(" + offTheChain + ")"
                                 }}
                               >
                                 <a href="#mark" />
@@ -200,9 +197,9 @@ class ProfilePage extends React.Component {
                                   <Badge color="info" className={classes.badge}>
                                     December 2018
                                   </Badge>
-                                  <a href="#mark">
+                                  <a href="https://offthechain-app.herokuapp.com/">
                                     <h2 className={classes.cardTitleWhite}>
-                                      React App
+                                      Pet Finder
                                     </h2>
                                   </a>
                                 </CardBody>
@@ -212,7 +209,7 @@ class ProfilePage extends React.Component {
                               <Card
                                 background
                                 style={{
-                                  backgroundImage: "url(" + oluEletu + ")"
+                                  backgroundImage: "url(" + clicky + ")"
                                 }}
                               >
                                 <a href="#mark" />
@@ -226,9 +223,9 @@ class ProfilePage extends React.Component {
                                   >
                                     December 2018
                                   </Badge>
-                                  <a href="#mark">
+                                  <a href="https://clickclicksmash.herokuapp.com/">
                                     <h2 className={classes.cardTitleWhite}>
-                                      React App
+                                      Clicky
                                     </h2>
                                   </a>
                                 </CardBody>
@@ -236,10 +233,11 @@ class ProfilePage extends React.Component {
                             </GridItem>
                             <GridItem xs={12} sm={12} md={6}>
                               <Card
+                                elevation={20}
                                 background
                                 style={{
                                   backgroundImage:
-                                    "url(" + clicky + ")"
+                                    "url(" + friendFinder + ")"
                                 }}
                               >
                                 <a href="#mark" />
@@ -253,9 +251,9 @@ class ProfilePage extends React.Component {
                                   >
                                     December 2018
                                   </Badge>
-                                  <a href="https://clickclicksmash.herokuapp.com/">
+                                  <a href="https://friendfinder555.herokuapp.com/">
                                     <h2 className={classes.cardTitleWhite}>
-                                      Clicky App
+                                      Friend Match
                                     </h2>
                                   </a>
                                 </CardBody>
@@ -272,18 +270,18 @@ class ProfilePage extends React.Component {
                           <h4 className={classes.title}>Stats</h4>
                           <ul className={classes.listUnstyled}>
                             <li>
-                              <b>5</b> Challenges
+                              <b>2</b> Major Deployments
                             </li>
                             <li>
-                              <b>1</b> Major Deployment
+                              <b>2</b> Challenges
                             </li>
                           </ul>
                           <hr />
                           <h4 className={classes.title}>About this work</h4>
                           <p className={classes.description}>
-                            Here are a few samples of applications I've built using JavaScript React. 
-                            I'm very excited to see where this journey with React.js will take me. 
-                            It has been quite the adventure so far and is only just beginning!
+                            This is some of my most recent work including two major full-stack deployments as well as as a couple of 
+                            fully deployed games. In this set there are many examples of using new technologies, 
+                            such as React.js, Authentication, etc. Below is a more detailed list.   
                           </p>
                           <hr />
                           <h4 className={classes.title}>Focus</h4>
@@ -292,14 +290,28 @@ class ProfilePage extends React.Component {
                           <Badge color="success">ES6+</Badge>
                           <Badge color="rose">MongoDB</Badge>
                           <Badge color="danger">Constructors</Badge>
-                          <Badge color="danger">Constructors</Badge>
+                          <Badge color="warning">Heroku</Badge>
+                          <Badge color="primary">Material-UI</Badge>
+                          <Badge color="info">Authentication</Badge>
+                          <Badge color="success">JSS</Badge>
+                          <Badge color="rose">API Calls</Badge>
+                          <Badge color="danger">Heroku</Badge>
+                          <Badge color="warning">Life-cycle Methods</Badge>
+                          <Badge color="primary">CRUD</Badge>
+                          <Badge color="info">Express.js</Badge>
+                          <Badge color="success">Node.js</Badge>
+                          <Badge color="rose">NPM Packages</Badge>
+                          <Badge color="danger">MySQL</Badge>
+                          <Badge color="warning">Sequelize</Badge>
+                          <Badge color="primary">Mongoose</Badge>
+                          <Badge color="info">Material-Kit</Badge>
                         </GridItem>
                       </GridContainer>
                     )
                   },
                   {
-                    tabButton: "Advanced",
-                    tabIcon: People,
+                    tabButton: "Front-End",
+                    tabIcon: Palette,
                     tabContent: (
                       <GridContainer>
                         <GridItem
@@ -314,34 +326,7 @@ class ProfilePage extends React.Component {
                               <Card
                                 background
                                 style={{
-                                  backgroundImage:
-                                    "url(" + offTheChain + ")"
-                                }}
-                              >
-                                <a href="#mark" />
-                                <CardBody
-                                  background
-                                  className={classes.cardBody}
-                                >
-                                  <Badge
-                                    color="warning"
-                                    className={classes.badge}
-                                  >
-                                    Novemeber 2018
-                                  </Badge>
-                                  <a href="https://offthechain-app.herokuapp.com/">
-                                    <h2 className={classes.cardTitleWhite}>
-                                      Pet Finder
-                                    </h2>
-                                  </a>
-                                </CardBody>
-                              </Card>
-                            </GridItem>
-                            <GridItem xs={12} sm={12} md={6}>
-                              <Card
-                                background
-                                style={{
-                                  backgroundImage: "url(" + friendFinder + ")"
+                                  backgroundImage: "url(" + Bebop + ")"
                                 }}
                               >
                                 <a href="#mark" />
@@ -354,7 +339,7 @@ class ProfilePage extends React.Component {
                                   </Badge>
                                   <a href="https://friendfinder555.herokuapp.com/">
                                     <h2 className={classes.cardTitleWhite}>
-                                      Friend Match
+                                      Multiplayer
                                     </h2>
                                   </a>
                                 </CardBody>
@@ -386,33 +371,6 @@ class ProfilePage extends React.Component {
                                 </CardBody>
                               </Card>
                             </GridItem>
-                            <GridItem xs={12} sm={12} md={6}>
-                              <Card
-                                background
-                                style={{
-                                  backgroundImage:
-                                    "url(" + rooted + ")"
-                                }}
-                              >
-                                <a href="#mark" />
-                                <CardBody
-                                  background
-                                  className={classes.cardBody}
-                                >
-                                  <Badge
-                                    color="success"
-                                    className={classes.badge}
-                                  >
-                                    September 2018
-                                  </Badge>
-                                  <a href="https://themarcusaurelius.github.io/Rooted/">
-                                    <h2 className={classes.cardTitleWhite}>
-                                      Room Search
-                                    </h2>
-                                  </a>
-                                </CardBody>
-                              </Card>
-                            </GridItem>
                           </GridContainer>
                         </GridItem>
                         <GridItem
@@ -424,40 +382,30 @@ class ProfilePage extends React.Component {
                           <h4 className={classes.title}>Stats</h4>
                           <ul className={classes.listUnstyled}>
                             <li>
-                              <b>3</b> Challenges
-                            </li>
-                            <li>
-                              <b>1</b> Major Deployment
+                              <b>2</b> Challenges
                             </li>
                           </ul>
                           <hr />
                           <h4 className={classes.title}>About this work</h4>
                           <p className={classes.description}>
-                            Here are samples of work I have done using a variety of different applications and interfaces 
-                            combined with javaScript and jQuery code. Some are fully deployed front-to-back, 
-                            while others are samples of using particular JS code(timers, etc.).
+                            Here are a few examples of some early front-end work I have done that practice using vanilla JavaScript, 
+                            jQuery, CSS, and HTML. These were a lot of fun to work on and a great learning experience. 
                           </p>
                           <hr />
                           <h4 className={classes.title}>Focus</h4>
                           <Badge color="danger">JavaScript</Badge>
-                          <Badge color="success">Node.js</Badge>
-                          <Badge color="warning">Express</Badge>
-                          <Badge color="info">Sequelize</Badge>
-                          <Badge color="rose">MySQL</Badge>
-                          <Badge color="danger">JSON</Badge>
                           <Badge color="warning">jQuery</Badge>
-                          <Badge color="info">Responsive Design</Badge>
                           <Badge color="rose">CSS</Badge>
                           <Badge color="primary">HTML</Badge>
-                          <Badge color="danger">API's</Badge>
-                          <Badge color="success">Firebase</Badge>
+                          <Badge color="info">Responsive Design</Badge>
+                          <Badge color="success">Timers</Badge>
                         </GridItem>
                       </GridContainer>
                     )
                   },
                   {
-                    tabButton: "Beginner",
-                    tabIcon: Camera,
+                    tabButton: "Back-End",
+                    tabIcon: Code,
                     tabContent: (
                       <GridContainer>
                         <GridItem
@@ -472,37 +420,10 @@ class ProfilePage extends React.Component {
                               <Card
                                 background
                                 style={{
-                                  backgroundImage:
-                                    "url(" + mariyaGeorgieva + ")"
-                                }}
-                              >
-                                <a href="#mark" />
-                                <CardBody
-                                  background
-                                  className={classes.cardBody}
-                                >
-                                  <Badge
-                                    color="warning"
-                                    className={classes.badge}
-                                  >
-                                    November 2018
-                                  </Badge>
-                                  <a href="#mark">
-                                    <h2 className={classes.cardTitleWhite}>
-                                      Handlebars
-                                    </h2>
-                                  </a>
-                                </CardBody>
-                              </Card>
-                            </GridItem>
-                            <GridItem xs={12} sm={12} md={6}>
-                              <Card
-                                background
-                                style={{
                                   backgroundImage: "url(" + Bamazon + ")"
                                 }}
                               >
-                                <a href="#mark" />
+                                <a href="https://drive.google.com/file/d/17M12_me-22Jigm525EIaB4wXT8C3rgYD/view" />
                                 <CardBody
                                   background
                                   className={classes.cardBody}
@@ -510,7 +431,7 @@ class ProfilePage extends React.Component {
                                   <Badge color="info" className={classes.badge}>
                                     October 2018
                                   </Badge>
-                                  <a href="#mark">
+                                  <a href="https://drive.google.com/file/d/17M12_me-22Jigm525EIaB4wXT8C3rgYD/view">
                                     <h2 className={classes.cardTitleWhite}>
                                       CLI App
                                     </h2>
@@ -536,36 +457,9 @@ class ProfilePage extends React.Component {
                                   >
                                     October 2018
                                   </Badge>
-                                  <a href="#mark">
+                                  <a href="https://drive.google.com/file/d/19of5XCochenZgjEoihDpNh2Wl0arEGih/view">
                                     <h2 className={classes.cardTitleWhite}>
                                       LIRI App
-                                    </h2>
-                                  </a>
-                                </CardBody>
-                              </Card>
-                            </GridItem>
-                            <GridItem xs={12} sm={12} md={6}>
-                              <Card
-                                background
-                                style={{
-                                  backgroundImage:
-                                    "url(" + Bebop + ")"
-                                }}
-                              >
-                                <a href="#mark" />
-                                <CardBody
-                                  background
-                                  className={classes.cardBody}
-                                >
-                                  <Badge
-                                    color="success"
-                                    className={classes.badge}
-                                  >
-                                    September 2018
-                                  </Badge>
-                                  <a href="#mark">
-                                    <h2 className={classes.cardTitleWhite}>
-                                      Multiplayer
                                     </h2>
                                   </a>
                                 </CardBody>
@@ -582,31 +476,24 @@ class ProfilePage extends React.Component {
                           <h4 className={classes.title}>Stats</h4>
                           <ul className={classes.listUnstyled}>
                             <li>
-                              <b>5</b> Challenges
-                            </li>
-                            <li>
-                              <b>1</b> Major Deployment
+                              <b>2</b> Challenges
                             </li>
                           </ul>
                           <hr />
                           <h4 className={classes.title}>About this work</h4>
                           <p className={classes.description}>
-                            Here are a few samples of applications I've built using JavaScript React. 
-                            I'm very excited to see where this journey with React.js will take me. 
-                            It has been quite the adventure so far and is only just beginning!
+                            Here are a few samples I've built particulary for the back-end
+                            that handle user requests through the command line interface as well
+                            as working with API call to pull data from online sources.  
                           </p>
                           <hr />
                           <h4 className={classes.title}>Focus</h4>
                           <Badge color="primary">JavaScript</Badge>
-                          <Badge color="info">Jquery</Badge>
                           <Badge color="success">Node.js</Badge>
+                          <Badge color="rose">mySQL</Badge>
                           <Badge color="danger">Sequelize</Badge>
                           <Badge color="warning">CLI</Badge>
-                          <Badge color="rose">Handlebars</Badge>
-                          <Badge color="primary">HTML</Badge>
-                          <Badge color="info">CSS</Badge>
-                          <Badge color="success">Express</Badge>
-                          <Badge color="danger">Bootsrap 4</Badge>
+                          <Badge color="info">Express.js</Badge>
                         </GridItem>
                       </GridContainer>
                     )
