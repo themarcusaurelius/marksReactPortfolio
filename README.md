@@ -145,8 +145,6 @@ React Portfolio
 + [Material Dashboard Pro React](https://demos.creative-tim.com/material-dashboard-pro-react/#/dashboard)
 
 
-
-
 ##### Social Media
 
 
@@ -154,4 +152,3 @@ Facebook: <https://www.facebook.com/profile.php?id=29616235>
 
 Linkedin: 
 
-Instagram: 
