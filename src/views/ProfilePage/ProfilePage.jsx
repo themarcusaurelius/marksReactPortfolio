@@ -29,14 +29,16 @@ import Parallax from "components/Parallax/Parallax.jsx";
 import Clearfix from "components/Clearfix/Clearfix.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import mark from "assets/img/faces/mark.jpg";
-import clicky from "assets/img/SmashBrosClicky.gif";
-import offTheChain from "assets/img/OTC.gif";
-import friendFinder from "assets/img/FF.gif";
-import quiz from "assets/img/Quiz.gif";
+import clicky from "assets/img/CCS.png";
+import offTheChain from "assets/img/OTC.png";
+import friendFinder from "assets/img/FF.jpg";
+import quiz from "assets/img/Quiz.png";
 import Bamazon from "assets/img/Bamazon.gif";
 import Liri from "assets/img/liri.gif";
-import Bebop from "assets/img/Bebop.gif";
-import GreenToad from "assets/img/GreenToad1.gif";
+import Bebop from "assets/img/Bebop.png";
+import GreenToad from "assets/img/GT.png";
+import video from "assets/img/VID.png";
+import "./Profile.css";
 
 
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.jsx";
@@ -129,11 +131,11 @@ class ProfilePage extends React.Component {
               className={classNames(classes.description, classes.textCenter)}
             >
               <p>
-                I have been many things in my life. An athlete, musician, realtor, world traveler, chef, etc. 
-                Adding to this repertoire, I can confidently say 
-                that I am also a full-stack web developer. I hope you enjoy this snapshot into the 
-                journey I have gone through to get to where I am now. It's had it's ups and downs and at often times been
-                a painful process, but it's been well worth it in the end!
+              Full Stack Software Engineer with the ability to design and engineer progressive web applications 
+              with unique and responsive code from development to deployment. A developer adept at working in a 
+              diverse team environment to deliver customized software solutions and scripts, and effective at 
+              combining creativity with problem-solving skills to develop public-friendly scalable applications 
+              with a one-of-a-kind user experience.
                 {" "}
               </p>
             </div>
@@ -179,6 +181,15 @@ class ProfilePage extends React.Component {
                                       GreenToad
                                     </h2>
                                   </a>
+                                  <div>
+                                    <Button
+                                      href={"https://github.com/projectGreenbelt/GreenToad"}
+                                      justIcon
+                                      color="success"
+                                    >
+                                      <i className={classes.socials + " fab fa-github-alt"} />
+                                    </Button>
+                                  </div>
                                 </CardBody>
                               </Card>
                             </GridItem>
@@ -189,7 +200,7 @@ class ProfilePage extends React.Component {
                                   backgroundImage: "url(" + offTheChain + ")"
                                 }}
                               >
-                                <a href="#mark" />
+                                <a href="https://offthechain-app.herokuapp.com/" />
                                 <CardBody
                                   background
                                   className={classes.cardBody}
@@ -202,6 +213,15 @@ class ProfilePage extends React.Component {
                                       Pet Finder
                                     </h2>
                                   </a>
+                                  <div>
+                                    <Button
+                                      href={"https://github.com/Project2-PetFinder/OffTheChain"}
+                                      justIcon
+                                      color="primary"
+                                    >
+                                      <i className={classes.socials + " fab fa-github-alt"} />
+                                    </Button>
+                                  </div>
                                 </CardBody>
                               </Card>
                             </GridItem>
@@ -212,7 +232,7 @@ class ProfilePage extends React.Component {
                                   backgroundImage: "url(" + clicky + ")"
                                 }}
                               >
-                                <a href="#mark" />
+                                <a href="https://github.com/themarcusaurelius/clicky" />
                                 <CardBody
                                   background
                                   className={classes.cardBody}
@@ -228,6 +248,15 @@ class ProfilePage extends React.Component {
                                       Clicky
                                     </h2>
                                   </a>
+                                  <div>
+                                    <Button
+                                      href={"https://github.com/themarcusaurelius/clicky"}
+                                      justIcon
+                                      color="warning"
+                                    >
+                                      <i className={classes.socials + " fab fa-github-alt"} />
+                                    </Button>
+                                  </div>
                                 </CardBody>
                               </Card>
                             </GridItem>
@@ -237,7 +266,7 @@ class ProfilePage extends React.Component {
                                 background
                                 style={{
                                   backgroundImage:
-                                    "url(" + friendFinder + ")"
+                                    "url(" + video + ")"
                                 }}
                               >
                                 <a href="#mark" />
@@ -249,13 +278,22 @@ class ProfilePage extends React.Component {
                                     color="success"
                                     className={classes.badge}
                                   >
-                                    December 2018
+                                    March 2019
                                   </Badge>
-                                  <a href="https://friendfinder555.herokuapp.com/">
+                                  <a href="https://reactvideos.herokuapp.com/">
                                     <h2 className={classes.cardTitleWhite}>
-                                      Friend Match
+                                      Video Player
                                     </h2>
                                   </a>
+                                  <div>
+                                    <Button
+                                      href={"https://github.com/projectGreenbelt/GreenToad"}
+                                      justIcon
+                                      color="danger"
+                                    >
+                                      <i className={classes.socials + " fab fa-github-alt"} />
+                                    </Button>
+                                  </div>
                                 </CardBody>
                               </Card>
                             </GridItem>
@@ -279,9 +317,8 @@ class ProfilePage extends React.Component {
                           <hr />
                           <h4 className={classes.title}>About this work</h4>
                           <p className={classes.description}>
-                            This is some of my most recent work including two major full-stack deployments as well as as a couple of 
-                            fully deployed games. In this set there are many examples of using new technologies, 
-                            such as React.js, Authentication, etc. Below is a more detailed list.   
+                            Some of my most recent work including two major full-stack deployments as well as a memory  
+                            game and a video player. Below is a breakdown of specific technologies and skill sets used in these applications.
                           </p>
                           <hr />
                           <h4 className={classes.title}>Focus</h4>
@@ -334,7 +371,7 @@ class ProfilePage extends React.Component {
                                   background
                                   className={classes.cardBody}
                                 >
-                                  <Badge color="info" className={classes.badge}>
+                                  <Badge color="danger" className={classes.badge}>
                                     October 2018
                                   </Badge>
                                   <a href="https://friendfinder555.herokuapp.com/">
@@ -342,6 +379,15 @@ class ProfilePage extends React.Component {
                                       Multiplayer
                                     </h2>
                                   </a>
+                                  <div>
+                                    <Button
+                                      href={"https://github.com/projectGreenbelt/GreenToad"}
+                                      justIcon
+                                      color="warning"
+                                    >
+                                      <i className={classes.socials + " fab fa-github-alt"} />
+                                    </Button>
+                                  </div>
                                 </CardBody>
                               </Card>
                             </GridItem>
@@ -358,7 +404,7 @@ class ProfilePage extends React.Component {
                                   className={classes.cardBody}
                                 >
                                   <Badge
-                                    color="danger"
+                                    color="info"
                                     className={classes.badge}
                                   >
                                     September 2018
@@ -368,6 +414,50 @@ class ProfilePage extends React.Component {
                                       Trivia Game
                                     </h2>
                                   </a>
+                                  <div>
+                                    <Button
+                                      href={"https://github.com/themarcusaurelius/TriviaGame"}
+                                      justIcon
+                                      color="success"
+                                    >
+                                      <i className={classes.socials + " fab fa-github-alt"} />
+                                    </Button>
+                                  </div>
+                                </CardBody>
+                              </Card>
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={6}>
+                              <Card
+                                background
+                                style={{
+                                  backgroundImage: "url(" + friendFinder + ")"
+                                }}
+                              >
+                                <a href="#mark" />
+                                <CardBody
+                                  background
+                                  className={classes.cardBody}
+                                >
+                                  <Badge
+                                    color="warning"
+                                    className={classes.badge}
+                                  >
+                                    September 2018
+                                  </Badge>
+                                  <a href="https://friendfinder555.herokuapp.com/survey">
+                                    <h2 className={classes.cardTitleWhite}>
+                                      Friend Match
+                                    </h2>
+                                  </a>
+                                  <div>
+                                    <Button
+                                      href={"https://github.com/themarcusaurelius/FriendFinder"}
+                                      justIcon
+                                      color="primary"
+                                    >
+                                      <i className={classes.socials + " fab fa-github-alt"} />
+                                    </Button>
+                                  </div>
                                 </CardBody>
                               </Card>
                             </GridItem>
@@ -382,13 +472,13 @@ class ProfilePage extends React.Component {
                           <h4 className={classes.title}>Stats</h4>
                           <ul className={classes.listUnstyled}>
                             <li>
-                              <b>2</b> Challenges
+                              <b>4</b> Challenges
                             </li>
                           </ul>
                           <hr />
                           <h4 className={classes.title}>About this work</h4>
                           <p className={classes.description}>
-                            Here are a few examples of some early front-end work I have done that practice using vanilla JavaScript, 
+                            A few examples of some front-end work that showcase various web development technologies such as JavaScript, 
                             jQuery, CSS, and HTML. These were a lot of fun to work on and a great learning experience. 
                           </p>
                           <hr />
