@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch } from "react-router";
-
+import * as serviceWorker from './serviceWorker';
 import indexRoutes from "routes/index.jsx";
 
 import "assets/scss/material-kit-pro-react.css?v=1.2.0";
@@ -19,3 +19,5 @@ ReactDOM.render(
   </Router>,
   document.getElementById("root")
 );
+
+serviceWorker.register()
