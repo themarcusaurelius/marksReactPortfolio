@@ -40,7 +40,8 @@ import GreenToad from "assets/img/GT.png";
 import Streamy from "assets/img/Streameo.png";
 import video from "assets/img/VID.png";
 import context from "assets/img/context.png";
-import api from "assets/img/api.gif"
+import api from "assets/img/api.gif";
+import reading from "assets/img/reading.png"
 import "./Profile.css";
 
 
@@ -375,7 +376,7 @@ class ProfilePage extends React.Component {
                                 </CardBody>
                               </Card>
                               <p className={classes.description}>
-                                Youtube clone created with React.js and Semantic UI highlighting API calls using Axios. 
+                              Youtube clone created with React.js and Semantic UI highlighting API calls using Axios.
                               </p>
                               <h5 className={classes.title}>Tech-Stack:</h5>
                               <Badge color="danger">React.js</Badge>
@@ -390,9 +391,64 @@ class ProfilePage extends React.Component {
                               <Badge color="primary">Node.js</Badge>
                               <Badge color="info">Youtube API</Badge>
                               <Badge color="rose">Heroku</Badge>
+                              <br /><br/><hr /><br /><br />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={12}>
+                              <Card
+                                elevation={20}
+                                background
+                                style={{
+                                  backgroundImage:
+                                    "url(" + reading + ")"
+                                }}
+                              >
+                                <a href="#mark" />
+                                <CardBody
+                                  background
+                                  className={classes.cardBody}
+                                >
+                                  <Badge
+                                    color="danger"
+                                    className={classes.badge}
+                                  >
+                                    January 2019
+                                  </Badge>
+                                  <a href="https://marksreadinglist.herokuapp.com/">
+                                    <h2 className={classes.cardTitleWhite}>
+                                      CRUD Reading List
+                                    </h2>
+                                  </a>
+                                  <div>
+                                    <Button
+                                      href={"https://github.com/themarcusaurelius/ReadingList"}
+                                      justIcon
+                                      color="info"
+                                    >
+                                      <i className={classes.socials + " fab fa-github-alt"} />
+                                    </Button>
+                                  </div>
+                                </CardBody>
+                              </Card>
+                              <p className={classes.description}>
+                                Full-Stack React.js based single-page CRUD application that lets users add/delete books to/from a reading list. Book information
+                                contains Authors, Title, and Synopsis.
+                              </p>
+                              <h5 className={classes.title}>Tech-Stack:</h5>
+                              <Badge color="danger">React.js</Badge>
+                              <Badge color="warning">Bootstrap 4</Badge>
+                              <Badge color="rose">CSS</Badge>
+                              <Badge color="primary">JavaScript</Badge>
+                              <Badge color="success">JSS</Badge>
+                              <Badge color="warning">ES6</Badge>
+                              <Badge color="primary">Node.js</Badge>
+                              <Badge color="danger">Express.js</Badge>
+                              <Badge color="info">MongoDB</Badge>
+                              <Badge color="success">React Router 4</Badge>
+                              <Badge color="rose">Heroku</Badge>
                             </GridItem>
                           </GridContainer>
                         </GridItem>
+                        
                         <GridItem
                           xs={12}
                           sm={12}
@@ -402,7 +458,7 @@ class ProfilePage extends React.Component {
                           <h4 className={classes.title}>Stats</h4>
                           <ul className={classes.listUnstyled}>
                             <li>
-                              <b>4</b> Deployments
+                              <b>5</b> Deployments
                             </li>
                           </ul>
                           <hr />
@@ -681,7 +737,6 @@ class ProfilePage extends React.Component {
                             A few examples of some front-end work that showcase various web development technologies such as 
                             React.js, Vanilla JavaScript, jQuery, CSS, and HTML. 
                           </p>
-                          <hr />
                         </GridItem>
                       </GridContainer>
                     )
