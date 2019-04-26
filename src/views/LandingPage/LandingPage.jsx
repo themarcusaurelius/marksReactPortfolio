@@ -1,11 +1,11 @@
 import React from "react";
-// nodejs library that concatenates classes
+import { Link } from "react-router-dom";
+
 
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-// @material-ui/icons
 
 // core components
 import Header from "components/Header/Header.jsx";
@@ -15,10 +15,7 @@ import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
-
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
-
-
 const dashboardRoutes = [];
 
 class LandingPage extends React.Component {
@@ -48,21 +45,21 @@ class LandingPage extends React.Component {
               <GridItem xs={12} sm={6} md={6}>
                 <h1 className={classes.title}>Welcome to my world.</h1>
                 <h4>
-                  I've created this site to showcase and document the incredible and life-changing journey
-                  I have recently been on as a full-stack web developer. It is amazing to see how my particular style of coding 
-                  continually keeps evolving and maturing as I further advance in this crazy field. Here it is in all its rawness. 
-                  I hope you enjoy! 
+                  This site showcases and documents my ongoing journey as a Full-Stack Web Developer. 
+                  My portfolio includes multiple full stack deployed real-world applications as well as front-end and back-end applications highlighting the 
+                  use of specific skill sets and technologies. I hope you enjoy!
                 </h4>
                 <br />
-                <Button
-                  color="primary"
-                  size="lg"
-                  href="/profile-page"
-                  target=""
-                  rel="noopener noreferrer"
-                >
-                  <i className="fas fa-arrow-right" />Continue
-                </Button>
+                <Link to="/profile-page">
+                  <Button
+                    color="primary"
+                    size="lg"
+                    target=""
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fas fa-arrow-right" />Continue
+                  </Button>
+                </Link>
               </GridItem>
             </GridContainer>
           </div>

@@ -37,7 +37,10 @@ import Bamazon from "assets/img/Bamazon.gif";
 import Liri from "assets/img/liri.gif";
 import Bebop from "assets/img/Bebop.png";
 import GreenToad from "assets/img/GT.png";
+import Streamy from "assets/img/Streameo.png";
 import video from "assets/img/VID.png";
+import context from "assets/img/context.png";
+import api from "assets/img/api.gif"
 import "./Profile.css";
 
 
@@ -131,12 +134,12 @@ class ProfilePage extends React.Component {
               className={classNames(classes.description, classes.textCenter)}
             >
               <p>
-              Full Stack Software Engineer with the ability to design and engineer progressive web applications 
-              with unique and responsive code from development to deployment. A developer adept at working in a 
-              diverse team environment to deliver customized software solutions and scripts, and effective at 
-              combining creativity with problem-solving skills to develop public-friendly scalable applications 
-              with a one-of-a-kind user experience.
-                {" "}
+                Full Stack Software Developer with the ability to design progressive web applications 
+                with responsive code from development to deployment. Adept at working in a 
+                diverse team environment to deliver customized software solutions, and effective at 
+                combining creativity with problem-solving skills to develop public-friendly scalable applications 
+                with a one-of-a-kind user experience.
+                  {" "}
               </p>
             </div>
             <div className={classes.profileTabs}>
@@ -157,7 +160,7 @@ class ProfilePage extends React.Component {
                         >
                           <h4 className={classes.title}>Latest Work</h4>
                           <GridContainer className={classes.collections}>
-                            <GridItem xs={12} sm={12} md={6}>
+                            <GridItem xs={12} sm={12} md={12}>
                               <Card
                                 background
                                 style={{
@@ -192,8 +195,38 @@ class ProfilePage extends React.Component {
                                   </div>
                                 </CardBody>
                               </Card>
+                              <p className={classes.description}>
+                                Full Stack React.js based all-in-one-guide and current status update 
+                                for every public access point on the Austin Greenbelt. 
+                                Users can also check into each location and chat with other users. 
+                              </p>
+                              <h5 className={classes.title}>Tech-Stack:</h5>
+                              <Badge color="danger">React.js</Badge>
+                              <Badge color="warning">Material UI</Badge>
+                              <Badge color="rose">CSS</Badge>
+                              <Badge color="primary">JavaScript</Badge>
+                              <Badge color="warning">React Router 4</Badge>
+                              <Badge color="info">0auth</Badge>
+                              <Badge color="success">JSS</Badge>
+                              <Badge color="danger">D3</Badge>
+                              <Badge color="warning">ES6</Badge>
+                              <Badge color="rose">React-Google-Maps</Badge>
+                              <Badge color="primary">React-Liquid-Gauge</Badge>
+                              <Badge color="info">React-Forecast</Badge>
+                              <Badge color="success">React-Moment</Badge>
+                              <Badge color="danger">Axios</Badge>
+                              <Badge color="info">MongoDB</Badge>
+                              <Badge color="warning">Mongo Labs</Badge>
+                              <Badge color="rose">Mongoose Schema</Badge>
+                              <Badge color="primary">Node.js</Badge>
+                              <Badge color="info">Express.js</Badge>
+                              <Badge color="success">Socket.io</Badge>
+                              <Badge color="danger">Google Maps API</Badge>
+                              <Badge color="info">USG Water Services API</Badge>
+                              <Badge color="warning">Dark Sky API</Badge>
+                              <br /><br/><hr /><br /><br />
                             </GridItem>
-                            <GridItem xs={12} sm={12} md={6}>
+                            <GridItem xs={12} sm={12} md={12}>
                               <Card
                                 background
                                 style={{
@@ -224,43 +257,84 @@ class ProfilePage extends React.Component {
                                   </div>
                                 </CardBody>
                               </Card>
+                              <p className={classes.description}>
+                                Full Stack Web App that allows users to post location and description of lost/found pet 
+                                to the database or search the database for lost/found pets. 
+                              </p>
+                              <h5 className={classes.title}>Tech-Stack:</h5>
+                              <Badge color="danger">JavaScript</Badge>
+                              <Badge color="success">jQuery</Badge>
+                              <Badge color="warning">HTML5</Badge>
+                              <Badge color="rose">CSS</Badge>
+                              <Badge color="primary">Bootstrap 4 Material Kit</Badge>
+                              <Badge color="info">Leaflet.js</Badge>
+                              <Badge color="success">Tabulator.js</Badge>
+                              <Badge color="danger">MySQL</Badge>
+                              <Badge color="warning">Sequelize</Badge>
+                              <Badge color="rose">Node.js</Badge>
+                              <Badge color="primary">Express.js</Badge>
+                              <Badge color="info">Heroku</Badge>
+                              <br /><br/> <hr /><br /><br />
                             </GridItem>
-                            <GridItem xs={12} sm={12} md={6}>
+                            <GridItem xs={12} sm={12} md={12}>
                               <Card
                                 background
                                 style={{
-                                  backgroundImage: "url(" + clicky + ")"
+                                  backgroundImage:
+                                    "url(" + Streamy + ")"
                                 }}
                               >
-                                <a href="https://github.com/themarcusaurelius/clicky" />
+                                <a href="https://drive.google.com/file/d/1QqLQrEK_nFegJ1Wp9QBrsvVX0mISG_nA/view" />
                                 <CardBody
                                   background
                                   className={classes.cardBody}
                                 >
                                   <Badge
-                                    color="danger"
+                                    color="success"
                                     className={classes.badge}
                                   >
-                                    December 2018
+                                    April 2019
                                   </Badge>
-                                  <a href="https://clickclicksmash.herokuapp.com/">
+                                  <a href="https://drive.google.com/file/d/1QqLQrEK_nFegJ1Wp9QBrsvVX0mISG_nA/view">
                                     <h2 className={classes.cardTitleWhite}>
-                                      Clicky
+                                      Redux Stream
                                     </h2>
                                   </a>
                                   <div>
                                     <Button
-                                      href={"https://github.com/themarcusaurelius/clicky"}
+                                      href={"https://github.com/themarcusaurelius/streamy"}
                                       justIcon
-                                      color="warning"
+                                      color="danger"
                                     >
                                       <i className={classes.socials + " fab fa-github-alt"} />
                                     </Button>
                                   </div>
                                 </CardBody>
                               </Card>
+                              <p className={classes.description}>
+                              Full-stack real-time streaming application with authentication. Built with a multitude
+                              of dependencies such as: Redux, Lodash, React-Router, Axios, Redux-Form, Redux-Thunk, Json Server, GAPI, flv.js.
+                              </p>
+                              <h5 className={classes.title}>Tech-Stack:</h5>
+                              <Badge color="danger">React.js</Badge>
+                              <Badge color="success">Semantic UI</Badge>
+                              <Badge color="warning">Youtube API</Badge>
+                              <Badge color="rose">ES6</Badge>
+                              <Badge color="primary">Google Auth</Badge>
+                              <Badge color="info">Google API</Badge>
+                              <Badge color="success">Redux</Badge>
+                              <Badge color="danger">Async/Await</Badge>
+                              <Badge color="warning">CRUD Methods</Badge>
+                              <Badge color="rose">JSON Server</Badge>
+                              <Badge color="primary">Node Media Server</Badge>
+                              <Badge color="info">Lodash</Badge>
+                              <Badge color="success">React Router 4</Badge>
+                              <Badge color="primary">Redux-Form</Badge>
+                              <Badge color="warning">Redux-Thunk</Badge>
+                              <Badge color="rose">flv.js</Badge>
+                              <br /><br/> <hr /><br /><br />
                             </GridItem>
-                            <GridItem xs={12} sm={12} md={6}>
+                            <GridItem xs={12} sm={12} md={12}>
                               <Card
                                 elevation={20}
                                 background
@@ -282,7 +356,7 @@ class ProfilePage extends React.Component {
                                   </Badge>
                                   <a href="https://reactvideos.herokuapp.com/">
                                     <h2 className={classes.cardTitleWhite}>
-                                      Video Player
+                                      Axios Video
                                     </h2>
                                   </a>
                                   <div>
@@ -296,6 +370,23 @@ class ProfilePage extends React.Component {
                                   </div>
                                 </CardBody>
                               </Card>
+                              <p className={classes.description}>
+                                Youtube clone created with React.js and Semantic UI highlighting API calls using Axios. 
+                              </p>
+                              <h5 className={classes.title}>Tech-Stack:</h5>
+                              <Badge color="danger">React.js</Badge>
+                              <Badge color="warning">Semantic UI</Badge>
+                              <Badge color="rose">CSS</Badge>
+                              <Badge color="primary">JavaScript</Badge>
+                              <Badge color="info">0auth</Badge>
+                              <Badge color="success">JSS</Badge>
+                              <Badge color="danger">Axios</Badge>
+                              <Badge color="warning">ES6</Badge>
+                              <Badge color="success">React-Moment</Badge>
+                              <Badge color="primary">Node.js</Badge>
+                              <Badge color="info">Youtube API</Badge>
+                              <Badge color="rose">Heroku</Badge>
+                              <br /><br />
                             </GridItem>
                           </GridContainer>
                         </GridItem>
@@ -308,10 +399,7 @@ class ProfilePage extends React.Component {
                           <h4 className={classes.title}>Stats</h4>
                           <ul className={classes.listUnstyled}>
                             <li>
-                              <b>2</b> Major Deployments
-                            </li>
-                            <li>
-                              <b>2</b> Challenges
+                              <b>4</b> Deployments
                             </li>
                           </ul>
                           <hr />
@@ -320,28 +408,6 @@ class ProfilePage extends React.Component {
                             Some of my most recent work including two major full-stack deployments as well as a memory  
                             game and a video player. Below is a breakdown of specific technologies and skill sets used in these applications.
                           </p>
-                          <hr />
-                          <h4 className={classes.title}>Focus</h4>
-                          <Badge color="primary">React.js</Badge>
-                          <Badge color="info">JSX</Badge>
-                          <Badge color="success">ES6+</Badge>
-                          <Badge color="rose">MongoDB</Badge>
-                          <Badge color="danger">Constructors</Badge>
-                          <Badge color="warning">Heroku</Badge>
-                          <Badge color="primary">Material-UI</Badge>
-                          <Badge color="info">Authentication</Badge>
-                          <Badge color="success">JSS</Badge>
-                          <Badge color="rose">API Calls</Badge>
-                          <Badge color="danger">Heroku</Badge>
-                          <Badge color="warning">Life-cycle Methods</Badge>
-                          <Badge color="primary">CRUD</Badge>
-                          <Badge color="info">Express.js</Badge>
-                          <Badge color="success">Node.js</Badge>
-                          <Badge color="rose">NPM Packages</Badge>
-                          <Badge color="danger">MySQL</Badge>
-                          <Badge color="warning">Sequelize</Badge>
-                          <Badge color="primary">Mongoose</Badge>
-                          <Badge color="info">Material-Kit</Badge>
                         </GridItem>
                       </GridContainer>
                     )
@@ -359,7 +425,103 @@ class ProfilePage extends React.Component {
                         >
                           <h4 className={classes.title}>Latest Work</h4>
                           <GridContainer className={classes.collections}>
-                            <GridItem xs={12} sm={12} md={6}>
+                            <GridItem xs={12} sm={12} md={12}>
+                              <Card
+                                background
+                                style={{
+                                  backgroundImage: "url(" + context + ")"
+                                }}
+                              >
+                                <a href="https://github.com/themarcusaurelius/clicky" />
+                                <CardBody
+                                  background
+                                  className={classes.cardBody}
+                                >
+                                  <Badge
+                                    color="info"
+                                    className={classes.badge}
+                                  >
+                                    December 2018
+                                  </Badge>
+                                  <a href="https://contexttranslator.herokuapp.com/">
+                                    <h2 className={classes.cardTitleWhite}>
+                                      Context
+                                    </h2>
+                                  </a>
+                                  <div>
+                                    <Button
+                                      href={"https://github.com/themarcusaurelius/translator"}
+                                      justIcon
+                                      color="primary"
+                                    >
+                                      <i className={classes.socials + " fab fa-github-alt"} />
+                                    </Button>
+                                  </div>
+                                </CardBody>
+                              </Card>
+                              <p className={classes.description}>
+                                React.js based application using Context as an alternative to Redux with 
+                                regards to state management to pass down props through React components. .
+                              </p>
+                              <h5 className={classes.title}>Tech-Stack:</h5>
+                              <Badge color="danger">React.js</Badge>
+                              <Badge color="rose">Context</Badge>
+                              <Badge color="primary">JavaScript</Badge>
+                              <Badge color="warning">ES6</Badge>
+                              <Badge color="primary">Node.js</Badge>
+                              <Badge color="info">Semantic UI</Badge>
+                              <Badge color="rose">Heroku</Badge>
+                              <br /><br/><hr /><br /><br />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={12}>
+                              <Card
+                                background
+                                style={{
+                                  backgroundImage: "url(" + clicky + ")"
+                                }}
+                              >
+                                <a href="https://github.com/themarcusaurelius/clicky" />
+                                <CardBody
+                                  background
+                                  className={classes.cardBody}
+                                >
+                                  <Badge
+                                    color="danger"
+                                    className={classes.badge}
+                                  >
+                                    December 2018
+                                  </Badge>
+                                  <a href="https://clickclicksmash.herokuapp.com/">
+                                    <h2 className={classes.cardTitleWhite}>
+                                      .map Clicky
+                                    </h2>
+                                  </a>
+                                  <div>
+                                    <Button
+                                      href={"https://github.com/themarcusaurelius/clicky"}
+                                      justIcon
+                                      color="warning"
+                                    >
+                                      <i className={classes.socials + " fab fa-github-alt"} />
+                                    </Button>
+                                  </div>
+                                </CardBody>
+                              </Card>
+                              <p className={classes.description}>
+                                React.js based memory game testing users ability pick randomly shuffled images without
+                                picking the same twice! 
+                              </p>
+                              <h5 className={classes.title}>Tech-Stack:</h5>
+                              <Badge color="danger">React.js</Badge>
+                              <Badge color="rose">CSS</Badge>
+                              <Badge color="primary">JavaScript</Badge>
+                              <Badge color="warning">ES6</Badge>
+                              <Badge color="primary">Node.js</Badge>
+                              <Badge color="info">Express.js</Badge>
+                              <Badge color="rose">Heroku</Badge>
+                              <br /><br/><hr /><br /><br />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={12}>
                               <Card
                                 background
                                 style={{
@@ -390,8 +552,19 @@ class ProfilePage extends React.Component {
                                   </div>
                                 </CardBody>
                               </Card>
+                              <p className={classes.description}>
+                                Vanilla JavaScript with jQuery multiplayer game where opponents attack each other and the player who depletes
+                                all their health first loses! 
+                              </p>
+                              <h5 className={classes.title}>Tech-Stack:</h5>
+                              <Badge color="danger">JavaScript</Badge>
+                              <Badge color="rose">CSS</Badge>
+                              <Badge color="primary">HTML5</Badge>
+                              <Badge color="warning">jQuery</Badge>
+                              <Badge color="success">Bootstrap 4</Badge>
+                              <br /><br/><hr /><br /><br />
                             </GridItem>
-                            <GridItem xs={12} sm={12} md={6}>
+                            <GridItem xs={12} sm={12} md={12}>
                               <Card
                                 background
                                 style={{
@@ -425,8 +598,19 @@ class ProfilePage extends React.Component {
                                   </div>
                                 </CardBody>
                               </Card>
+                              <p className={classes.description}>
+                                Vanilla JavaScript with jQuery quiz where users must answer multiple choice questions before the timer runs out.
+                              </p>
+                              <h5 className={classes.title}>Tech-Stack:</h5>
+                              <Badge color="danger">JavaScript</Badge>
+                              <Badge color="rose">CSS</Badge>
+                              <Badge color="primary">HTML5</Badge>
+                              <Badge color="warning">jQuery</Badge>
+                              <Badge color="success">Bootstrap 4</Badge>
+                              <Badge color="info">Timers</Badge>
+                              <br /><br/><hr /><br /><br />
                             </GridItem>
-                            <GridItem xs={12} sm={12} md={6}>
+                            <GridItem xs={12} sm={12} md={12}>
                               <Card
                                 background
                                 style={{
@@ -460,6 +644,19 @@ class ProfilePage extends React.Component {
                                   </div>
                                 </CardBody>
                               </Card>
+                              <p className={classes.description}>
+                                FriendFinder is a web application that takes the results from the answers a user chooses
+                                and compares them to other users' answers to find out who is most compatible with each other as a friend. 
+                              </p>
+                              <h5 className={classes.title}>Tech-Stack:</h5>
+                              <Badge color="danger">JavaScript</Badge>
+                              <Badge color="rose">CSS</Badge>
+                              <Badge color="primary">HTML5</Badge>
+                              <Badge color="warning">jQuery</Badge>
+                              <Badge color="success">Bootstrap 4</Badge>
+                              <Badge color="info">Node.js</Badge>
+                              <Badge color="danger">Express.js</Badge>
+                              <Badge color="rose">Heroku</Badge>
                             </GridItem>
                           </GridContainer>
                         </GridItem>
@@ -472,7 +669,7 @@ class ProfilePage extends React.Component {
                           <h4 className={classes.title}>Stats</h4>
                           <ul className={classes.listUnstyled}>
                             <li>
-                              <b>4</b> Challenges
+                              <b>5</b> Challenges
                             </li>
                           </ul>
                           <hr />
@@ -482,13 +679,6 @@ class ProfilePage extends React.Component {
                             jQuery, CSS, and HTML. These were a lot of fun to work on and a great learning experience. 
                           </p>
                           <hr />
-                          <h4 className={classes.title}>Focus</h4>
-                          <Badge color="danger">JavaScript</Badge>
-                          <Badge color="warning">jQuery</Badge>
-                          <Badge color="rose">CSS</Badge>
-                          <Badge color="primary">HTML</Badge>
-                          <Badge color="info">Responsive Design</Badge>
-                          <Badge color="success">Timers</Badge>
                         </GridItem>
                       </GridContainer>
                     )
@@ -506,7 +696,56 @@ class ProfilePage extends React.Component {
                         >
                           <h4 className={classes.title}>Latest Work</h4>
                           <GridContainer className={classes.collections}>
-                            <GridItem xs={12} sm={12} md={6}>
+                            <GridItem xs={12} sm={12} md={12}>
+                              <Card
+                                background
+                                style={{
+                                  backgroundImage: "url(" + api + ")"
+                                }}
+                              >
+                                <a href="#mark" />
+                                <CardBody
+                                  background
+                                  className={classes.cardBody}
+                                >
+                                  <Badge
+                                    color="danger"
+                                    className={classes.badge}
+                                  >
+                                    April 2019
+                                  </Badge>
+                                  <a href="https://drive.google.com/file/d/1v1dLR_0lRexp-A9rznxgnuFMYhHR3l2o/view">
+                                    <h2 className={classes.cardTitleWhite}>
+                                     CLI Post/Get
+                                    </h2>
+                                  </a>
+                                  <div>
+                                    <Button
+                                      href={"https://github.com/themarcusaurelius/challenge"}
+                                      justIcon
+                                      color="primary"
+                                    >
+                                      <i className={classes.socials + " fab fa-github-alt"} />
+                                    </Button>
+                                  </div>
+                                </CardBody>
+                              </Card>
+                              <p className={classes.description}>
+                                Node.js based back-end application that makes POST/GET requests using
+                                an API key to a Client's Klaviyo account.
+                              </p>
+                              <h5 className={classes.title}>Tech-Stack:</h5>
+                              <Badge color="danger">JavaScript</Badge>
+                              <Badge color="success">Node.js</Badge>
+                              <Badge color="primary">Express.js</Badge>
+                              <Badge color="info">Body-Parser</Badge>
+                              <Badge color="rose">Cookie-Parser</Badge>
+                              <Badge color="warning">Request</Badge>
+                              <Badge color="danger">Klaviyo API</Badge>
+                              <Badge color="success">Postman</Badge>
+                              <br /><br/><hr /><br /><br />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={12}>
                               <Card
                                 background
                                 style={{
@@ -523,13 +762,34 @@ class ProfilePage extends React.Component {
                                   </Badge>
                                   <a href="https://drive.google.com/file/d/17M12_me-22Jigm525EIaB4wXT8C3rgYD/view">
                                     <h2 className={classes.cardTitleWhite}>
-                                      CLI App
+                                      CLI Bamazon
                                     </h2>
                                   </a>
+                                  <div>
+                                    <Button
+                                      href={"https://github.com/themarcusaurelius/bamazon"}
+                                      justIcon
+                                      color="success"
+                                    >
+                                      <i className={classes.socials + " fab fa-github-alt"} />
+                                    </Button>
+                                  </div>
                                 </CardBody>
                               </Card>
+                              <p className={classes.description}>
+                                Online store built through Node.js that allows users to buy available products through the command line. 
+                                Handles current pricing, inventory, and updates inventory on sale completion.
+                              </p>
+                              <h5 className={classes.title}>Tech-Stack:</h5>
+                              <Badge color="danger">JavaScript</Badge>
+                              <Badge color="rose">chalk</Badge>
+                              <Badge color="primary">dotenv</Badge>
+                              <Badge color="warning">inquirer</Badge>
+                              <Badge color="success">mysql</Badge>
+                              <Badge color="info">require</Badge>
+                              <br /><br/><hr /><br /><br />
                             </GridItem>
-                            <GridItem xs={12} sm={12} md={6}>
+                            <GridItem xs={12} sm={12} md={12}>
                               <Card
                                 background
                                 style={{
@@ -549,11 +809,36 @@ class ProfilePage extends React.Component {
                                   </Badge>
                                   <a href="https://drive.google.com/file/d/19of5XCochenZgjEoihDpNh2Wl0arEGih/view">
                                     <h2 className={classes.cardTitleWhite}>
-                                      LIRI App
+                                      CLI Liri
                                     </h2>
                                   </a>
+                                  <div>
+                                    <Button
+                                      href={"https://github.com/themarcusaurelius/liri-node-app"}
+                                      justIcon
+                                      color="info"
+                                    >
+                                      <i className={classes.socials + " fab fa-github-alt"} />
+                                    </Button>
+                                  </div>
                                 </CardBody>
                               </Card>
+                              <p className={classes.description}>
+                                Node.js app that takes in the user's commands/requests and returns the appropriate answer.
+                                Set up to handle requests for Songs, Movies, and Concerts.
+                              </p>
+                              <h5 className={classes.title}>Tech-Stack:</h5>
+                              <Badge color="danger">JavaScript</Badge>
+                              <Badge color="rose">chalk-animation</Badge>
+                              <Badge color="primary">cryptiles</Badge>
+                              <Badge color="warning">dotenv</Badge>
+                              <Badge color="success">fs-extra</Badge>
+                              <Badge color="info">moment</Badge>
+                              <Badge color="danger">node spotify api</Badge>
+                              <Badge color="rose">omdb api</Badge>
+                              <Badge color="primary">bands in town api</Badge>
+                              <Badge color="warning">request</Badge>
+                              <Badge color="success">request-promise</Badge>
                             </GridItem>
                           </GridContainer>
                         </GridItem>
@@ -566,24 +851,16 @@ class ProfilePage extends React.Component {
                           <h4 className={classes.title}>Stats</h4>
                           <ul className={classes.listUnstyled}>
                             <li>
-                              <b>2</b> Challenges
+                              <b>3</b> Challenges
                             </li>
                           </ul>
                           <hr />
                           <h4 className={classes.title}>About this work</h4>
                           <p className={classes.description}>
-                            Here are a few samples I've built particulary for the back-end
+                            Here are a few applications built with Node.js for the back-end
                             that handle user requests through the command line interface as well
-                            as working with API call to pull data from online sources.  
+                            as working with API calls to pull/push data from/to online sources. 
                           </p>
-                          <hr />
-                          <h4 className={classes.title}>Focus</h4>
-                          <Badge color="primary">JavaScript</Badge>
-                          <Badge color="success">Node.js</Badge>
-                          <Badge color="rose">mySQL</Badge>
-                          <Badge color="danger">Sequelize</Badge>
-                          <Badge color="warning">CLI</Badge>
-                          <Badge color="info">Express.js</Badge>
                         </GridItem>
                       </GridContainer>
                     )
