@@ -274,6 +274,10 @@ class ProfilePage extends React.Component {
                               <Badge color="rose">Node.js</Badge>
                               <Badge color="primary">Express.js</Badge>
                               <Badge color="info">Heroku</Badge>
+                              <Badge color="success">Gulp</Badge>
+                              <Badge color="danger">MySQL2</Badge>
+                              <Badge color="warning">express-fileupload</Badge>
+                              <Badge color="rose">Sass</Badge>
                               <br /><br/> <hr /><br /><br />
                             </GridItem>
                             <GridItem xs={12} sm={12} md={12}>
@@ -349,7 +353,7 @@ class ProfilePage extends React.Component {
                                   className={classes.cardBody}
                                 >
                                   <Badge
-                                    color="success"
+                                    color="warning"
                                     className={classes.badge}
                                   >
                                     March 2019
@@ -361,9 +365,9 @@ class ProfilePage extends React.Component {
                                   </a>
                                   <div>
                                     <Button
-                                      href={"https://github.com/projectGreenbelt/GreenToad"}
+                                      href={"https://github.com/themarcusaurelius/reactVideos"}
                                       justIcon
-                                      color="danger"
+                                      color="rose"
                                     >
                                       <i className={classes.socials + " fab fa-github-alt"} />
                                     </Button>
@@ -386,7 +390,6 @@ class ProfilePage extends React.Component {
                               <Badge color="primary">Node.js</Badge>
                               <Badge color="info">Youtube API</Badge>
                               <Badge color="rose">Heroku</Badge>
-                              <br /><br />
                             </GridItem>
                           </GridContainer>
                         </GridItem>
@@ -405,8 +408,8 @@ class ProfilePage extends React.Component {
                           <hr />
                           <h4 className={classes.title}>About this work</h4>
                           <p className={classes.description}>
-                            Some of my most recent work including two major full-stack deployments as well as a memory  
-                            game and a video player. Below is a breakdown of specific technologies and skill sets used in these applications.
+                            These are some of my most recent Full-Stack deployed applications. There are a variety of technologies 
+                            and skill sets used in these programs that highlight my role as a Full-Stack developer.
                           </p>
                         </GridItem>
                       </GridContainer>
@@ -675,8 +678,8 @@ class ProfilePage extends React.Component {
                           <hr />
                           <h4 className={classes.title}>About this work</h4>
                           <p className={classes.description}>
-                            A few examples of some front-end work that showcase various web development technologies such as JavaScript, 
-                            jQuery, CSS, and HTML. These were a lot of fun to work on and a great learning experience. 
+                            A few examples of some front-end work that showcase various web development technologies such as 
+                            React.js, Vanilla JavaScript, jQuery, CSS, and HTML. 
                           </p>
                           <hr />
                         </GridItem>
@@ -857,7 +860,7 @@ class ProfilePage extends React.Component {
                           <hr />
                           <h4 className={classes.title}>About this work</h4>
                           <p className={classes.description}>
-                            Here are a few applications built with Node.js for the back-end
+                            This section contains a few applications built strictly with Node.js for the back-end
                             that handle user requests through the command line interface as well
                             as working with API calls to pull/push data from/to online sources. 
                           </p>
