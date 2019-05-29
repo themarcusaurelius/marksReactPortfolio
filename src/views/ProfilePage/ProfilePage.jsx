@@ -37,11 +37,12 @@ import Bamazon from "assets/img/Bamazon.gif";
 import Liri from "assets/img/liri.gif";
 import Bebop from "assets/img/Bebop.png";
 import GreenToad from "assets/img/GT.png";
+import Emaily from "assets/img/emaily.png";
 import Streamy from "assets/img/Streameo.png";
 import video from "assets/img/VID.png";
 import context from "assets/img/context.png";
 import api from "assets/img/api.gif";
-import reading from "assets/img/reading.png"
+import reading from "assets/img/reading.png";
 import "./Profile.css";
 
 
@@ -59,7 +60,7 @@ class ProfilePage extends React.Component {
       classes.imgRoundedCircle,
       classes.imgFluid
     );
-    const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
+    
     return (
       <div>
         <Header
@@ -95,10 +96,8 @@ class ProfilePage extends React.Component {
                       simple
                       color="github"
                       className={classes.margin5}
-
                     >
-                      <i className={classes.socials + " fab fa-github-alt"} />
-                      
+                      <i className={classes.socials + " fab fa-github-alt"} />                     
                     </Button>
                     <Button
                       href={"https://www.linkedin.com/in/mark-mayfield-88051b147/"}
@@ -140,7 +139,6 @@ class ProfilePage extends React.Component {
                 diverse team environment to deliver customized software solutions, and effective at 
                 combining creativity with problem-solving skills to develop public-friendly scalable applications 
                 with a one-of-a-kind user experience.
-                  {" "}
               </p>
             </div>
             <div className={classes.profileTabs}>
@@ -283,6 +281,73 @@ class ProfilePage extends React.Component {
                             </GridItem>
                             <GridItem xs={12} sm={12} md={12}>
                               <Card
+                                elevation={20}
+                                background
+                                style={{
+                                  backgroundImage:
+                                    "url(" + Emaily + ")"
+                                }}
+                              >
+                                <a href="#mark" />
+                                <CardBody
+                                  background
+                                  className={classes.cardBody}
+                                >
+                                  <Badge
+                                    color="danger"
+                                    className={classes.badge}
+                                  >
+                                    May 2019
+                                  </Badge>
+                                  <a href="https://emailymailer.herokuapp.com">
+                                    <h2 className={classes.cardTitleWhite}>
+                                      Emaily
+                                    </h2>
+                                  </a>
+                                  <div>
+                                    <Button
+                                      href={"https://github.com/themarcusaurelius/emaily"}
+                                      justIcon
+                                      color="info"
+                                    >
+                                      <i className={classes.socials + " fab fa-github-alt"} />
+                                    </Button>
+                                  </div>
+                                </CardBody>
+                              </Card>
+                              <p className={classes.description}>
+                                Full Stack React.js based  feedback-collection app. This mega app includes the full gamut of features, 
+                                including everything from authentication, to email handling, to processing credit/debit cards. 
+                                Used to send mass emails to a big list of users for the purpose of collecting feedback. 
+                              </p>
+                              <h5 className={classes.title}>Tech-Stack:</h5>
+                              <Badge color="danger">React.js</Badge>
+                              <Badge color="warning">Materialize-CSS</Badge>
+                              <Badge color="rose">http-proxy-middleware</Badge>
+                              <Badge color="primary">JavaScript</Badge>
+                              <Badge color="warning">React Router 4</Badge>
+                              <Badge color="info">0auth</Badge>
+                              <Badge color="success">JSS</Badge>
+                              <Badge color="danger">D3</Badge>
+                              <Badge color="warning">ES6</Badge>
+                              <Badge color="rose">Lodash</Badge>
+                              <Badge color="primary">React-Redux</Badge>
+                              <Badge color="info">React-Stripe-Checkout</Badge>
+                              <Badge color="success">Redux</Badge>
+                              <Badge color="danger">Redux-Form</Badge>
+                              <Badge color="info">Redux-Thunk</Badge>
+                              <Badge color="warning">MongoDB</Badge>
+                              <Badge color="rose">Mongoose Schema</Badge>
+                              <Badge color="primary">Node.js</Badge>
+                              <Badge color="info">Express.js</Badge>
+                              <Badge color="success">Passport.js</Badge>
+                              <Badge color="danger">SendGrid</Badge>
+                              <Badge color="info">Path-Parser</Badge>
+                              <Badge color="warning">Local Tunnel</Badge>
+                              <br /><br/><hr /><br /><br />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={12}>
+                              <Card
                                 background
                                 style={{
                                   backgroundImage:
@@ -317,8 +382,8 @@ class ProfilePage extends React.Component {
                                 </CardBody>
                               </Card>
                               <p className={classes.description}>
-                              Full-stack real-time streaming application with authentication. Built with a multitude
-                              of dependencies such as: Redux, Lodash, React-Router, Axios, Redux-Form, Redux-Thunk, Json Server, GAPI, flv.js.
+                                Full-stack real-time streaming application with authentication. Built with a multitude
+                                of dependencies such as: Redux, Lodash, React-Router, Axios, Redux-Form, Redux-Thunk, Json Server, GAPI, flv.js.
                               </p>
                               <h5 className={classes.title}>Tech-Stack:</h5>
                               <Badge color="danger">React.js</Badge>
@@ -376,7 +441,7 @@ class ProfilePage extends React.Component {
                                 </CardBody>
                               </Card>
                               <p className={classes.description}>
-                              Youtube clone created with React.js and Semantic UI highlighting API calls using Axios.
+                                Youtube clone created with React.js and Semantic UI highlighting API calls using Axios.
                               </p>
                               <h5 className={classes.title}>Tech-Stack:</h5>
                               <Badge color="danger">React.js</Badge>
@@ -458,7 +523,7 @@ class ProfilePage extends React.Component {
                           <h4 className={classes.title}>Stats</h4>
                           <ul className={classes.listUnstyled}>
                             <li>
-                              <b>5</b> Deployments
+                              <b>6</b> Deployments
                             </li>
                           </ul>
                           <hr />
