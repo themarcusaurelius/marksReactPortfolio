@@ -9,10 +9,16 @@ connectDB();
 // Init Middleware
 app.use(express.json({ extended: false }))
 
-// Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === "production") {
-    app.use(express.static("client/build"));
-}
+//Configuration for Express to behave correctly in production environment
+if (process.env.NODE_ENV === 'production') {
+    //First - Making sure express will serve production assets - main.js, main.css, etc
+    app.use(express.static('client/build'));
+    //Second -Express will serve up the index.html file if it doesn't recognize the route
+    const path = require('path');
+    app.get('*', (req, res) => {
+      res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+    });
+  };
 
 app.get('/', (req, res) => res.send('API Running'));
 
