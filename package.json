@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "My Portfolio",
   "main": "server.js",
+  "engines": {
+    "node": "8.8.1",
+    "npm": "5.0.3"
+  },
   "scripts": {
     "start": "node server",
     "server": "nodemon server",
@@ -24,6 +28,7 @@
     "concurrently": "^4.1.0",
     "config": "^3.1.0",
     "express": "^4.17.1",
-    "mongoose": "^5.5.11"
+    "mongoose": "^5.5.11",
+    "path": "^0.12.7"
   }
 }
