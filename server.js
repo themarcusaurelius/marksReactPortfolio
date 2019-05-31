@@ -1,5 +1,6 @@
 const express = require('express');
 const connectDB = require('./config/db');
+const path = require('path');
 
 const app = express();
 
@@ -8,6 +9,9 @@ connectDB();
 
 // Init Middleware
 app.use(express.json({ extended: false }))
+
+//Define Routes
+app.use('/api/users', require('./routes/api/users'))
 
 //Configuration for Express to behave correctly in production environment
 if (process.env.NODE_ENV === 'production') {
@@ -19,11 +23,6 @@ if (process.env.NODE_ENV === 'production') {
       res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
     });
   };
-
-app.get('/', (req, res) => res.send('API Running'));
-
-//Define Routes
-app.use('/api/users', require('./routes/api/users'))
  
 const PORT = process.env.PORT || 5000;
 
