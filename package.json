@@ -1,7 +1,7 @@
 {
   "name": "marksreactportfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "My Portfolio",
   "main": "server.js",
   "scripts": {
     "start": "node server",
@@ -12,11 +12,17 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/themarcusaurelius/marksReactPortfolio.git"
-  },
+  }, 
   "author": "Mark Mayfield",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/themarcusaurelius/marksReactPortfolio/issues"
   },
-  "homepage": "https://github.com/themarcusaurelius/marksReactPortfolio#readme"
+  "homepage": "https://github.com/themarcusaurelius/marksReactPortfolio#readme",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "config": "^3.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.5.11"
+  }
 }
