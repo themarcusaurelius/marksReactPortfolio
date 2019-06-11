@@ -31,6 +31,7 @@ import Button from "components/CustomButtons/Button.jsx";
 import mark from "assets/img/faces/mark.jpg";
 import clicky from "assets/img/CCS.png";
 import offTheChain from "assets/img/OTC.png";
+import Dev from "assets/img/Dev.png";
 import friendFinder from "assets/img/FF.jpg";
 import quiz from "assets/img/Quiz.png";
 import Bamazon from "assets/img/Bamazon.gif";
@@ -44,7 +45,6 @@ import context from "assets/img/context.png";
 import api from "assets/img/api.gif";
 import reading from "assets/img/reading.png";
 import "./Profile.css";
-
 
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.jsx";
 
@@ -278,6 +278,63 @@ class ProfilePage extends React.Component {
                               <Badge color="warning">express-fileupload</Badge>
                               <Badge color="rose">Sass</Badge>
                               <br /><br/> <hr /><br /><br />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={12}>
+                              <Card
+                                background
+                                style={{
+                                  backgroundImage:
+                                    "url(" + Dev + ")"
+                                }}
+                              >
+                                <a href="#mark" />
+                                <CardBody
+                                  background
+                                  className={classes.cardBody}
+                                >
+                                  <Badge
+                                    color="rose"
+                                    className={classes.badge}
+                                  >
+                                    May 2019
+                                  </Badge>
+                                  <a href="https://devconnector55.herokuapp.com/">
+                                    <h2 className={classes.cardTitleWhite}>
+                                      DevConnector
+                                    </h2>
+                                  </a>
+                                  <div>
+                                    <Button
+                                      href={"https://github.com/themarcusaurelius/devConnector"}
+                                      justIcon
+                                      color="warning"
+                                    >
+                                      <i className={classes.socials + " fab fa-github-alt"} />
+                                    </Button>
+                                  </div>
+                                </CardBody>
+                              </Card>
+                              <p className={classes.description}>
+                                An in depth Full Stack social network application built specifically to 
+                                connect programmers using Node.js, Express, React, Redux, Hooks, and MongoDB along with ES6+ best practices
+                              </p>
+                              <h5 className={classes.title}>Tech-Stack:</h5>
+                                <Badge color="danger">React.js</Badge>
+                                <Badge color="rose">CSS</Badge>
+                                <Badge color="primary">JavaScript</Badge>
+                                <Badge color="warning">React Router 4</Badge>
+                                <Badge color="info">Json Web Token</Badge>
+                                <Badge color="warning">ES6</Badge>
+                                <Badge color="rose">Redux</Badge>
+                                <Badge color="primary">React Hooks</Badge>
+                                <Badge color="info">Async/Await</Badge>
+                                <Badge color="success">React-Moment</Badge>
+                                <Badge color="danger">Axios</Badge>
+                                <Badge color="info">MongoDB</Badge>
+                                <Badge color="rose">Mongoose Schema</Badge>
+                                <Badge color="primary">Node.js</Badge>
+                                <Badge color="success">Express.js</Badge>
+                                <br /><br/><hr /><br /><br />
                             </GridItem>
                             <GridItem xs={12} sm={12} md={12}>
                               <Card
