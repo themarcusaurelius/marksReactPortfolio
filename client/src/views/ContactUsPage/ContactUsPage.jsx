@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react components used to create a google map
@@ -12,6 +13,9 @@ import {
 import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
+import InputLabel from '@material-ui/core/InputLabel';
+import Input from '@material-ui/core/Input';
+import FormControl from '@material-ui/core/FormControl';
 // @material-ui/icons
 import PinDrop from "@material-ui/icons/PinDrop";
 import Phone from "@material-ui/icons/Phone";
@@ -21,11 +25,11 @@ import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import InfoArea from "components/InfoArea/InfoArea.jsx";
-import CustomInput from "components/CustomInput/CustomInput.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import Footer from "components/Footer/Footer.jsx";
 
 import contactUsStyle from "assets/jss/material-kit-pro-react/views/contactUsStyle.jsx";
+import Axios from 'axios';
 
 const CustomSkinMap = withScriptjs(
   withGoogleMap(props => (
@@ -103,12 +107,48 @@ const CustomSkinMap = withScriptjs(
 );
 
 class ContactUsPage extends React.Component {
+  state = {
+    user: '',
+    email: '',
+    company: '',
+    message: '',
+    date: new Date()
+    //multiline: 'Controlled'
+  }
+
   componentDidMount() {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
   }
+
+  change = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value
+    })
+  }
+
+  reset = () => {
+    this.setState({
+      user: '',
+      email: '',
+      company: '',
+      message: '',
+      date: new Date()
+    })
+  }
+
+  onSubmit = async () => {
+    const url = 'api/contact'
+    const contact = this.state
+
+    await Axios.post(url, contact).then(() =>{})
+
+    console.log(this.state)
+  }
+
   render() {
     const { classes } = this.props;
+
     return (
       <div>
         <Header
@@ -119,7 +159,7 @@ class ContactUsPage extends React.Component {
         />
         <div className={classes.bigMap}>
           <CustomSkinMap
-            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh_URgHgmsx6M6uNR7BQ0J9udoszW9zIg"
+            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6kASRMis5abYOVOoo-j6Q-RT4RwBlKno"
             loadingElement={<div style={{ height: `100%` }} />}
             containerElement={
               <div
@@ -146,41 +186,78 @@ class ContactUsPage extends React.Component {
                     <br />
                   </p>
                   <form>
-                    <CustomInput
-                      labelText="Your Name"
-                      id="float"
-                      formControlProps={{
-                        fullWidth: true
-                      }}
-                    />
-                    <CustomInput
-                      labelText="Email address"
-                      id="float"
-                      formControlProps={{
-                        fullWidth: true
-                      }}
-                    />
-                    <CustomInput
-                      labelText="Phone"
-                      id="float"
-                      formControlProps={{
-                        fullWidth: true
-                      }}
-                    />
-                    <CustomInput
-                      labelText="Your message"
-                      id="float"
-                      formControlProps={{
-                        fullWidth: true
-                      }}
-                      inputProps={{
-                        multiline: true,
-                        rows: 6
-                      }}
-                    />
+                    <FormControl className={classes.margin} fullWidth margin="normal">
+                      <InputLabel
+                        htmlFor="custom-css-standard-input"
+                      >
+                        Your Name
+                      </InputLabel>
+                      <Input
+                        name="user"
+                        id="custom-css-standard-input"
+                        classes={{
+                          underline: classes.cssUnderline
+                        }}
+                        value={this.state.user}
+                        onChange={e => this.change(e)}
+                      />
+                    </FormControl>
+                    <FormControl className={classes.margin} fullWidth margin="normal">
+                      <InputLabel htmlFor="custom-css-standard-input">
+                        Email Address
+                      </InputLabel>
+                      <Input
+                        name="email"
+                        id="custom-css-standard-input"
+                        classes={{
+                          underline: classes.cssUnderline
+                        }}
+                        onChange={e => this.change(e)}
+                      />
+                    </FormControl>
+                    <FormControl className={classes.margin} fullWidth margin="normal">
+                      <InputLabel
+                        htmlFor="custom-css-standard-input"
+                      >
+                        Company
+                      </InputLabel>
+                      <Input
+                        name="company"
+                        id="custom-css-standard-input"
+                        classes={{
+                          underline: classes.cssUnderline
+                        }}
+                        onChange={e => this.change(e)}
+                      />
+                    </FormControl>
+                    <FormControl className={classes.margin} fullWidth margin="normal" multiline="true">
+                      <InputLabel
+                        htmlFor="custom-css-standard-input"
+                        classes={{
+                          root: classes.cssLabel
+                        }}
+                      >
+                        Your Message
+                      </InputLabel>
+                      <Input
+                        name="message"
+                        multiline
+                        rows="4"
+                        id="custom-css-standard-input"
+                        classes={{
+                          underline: classes.cssUnderline
+                        }}
+                        onChange={e => this.change(e)}
+                      />
+                    </FormControl>
+                    <br /><br />
                     <div className={classes.textCenter}>
-                      <Button color="primary" round>
-                        Contact us
+                      <Button 
+                        color="primary" 
+                        round
+                        onClick={() => this.onSubmit()}
+                      >
+                        Contact me
                       </Button>
                     </div>
                   </form>
@@ -241,5 +318,9 @@ class ContactUsPage extends React.Component {
     );
   }
 }
+
+ContactUsPage.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
 
 export default withStyles(contactUsStyle)(ContactUsPage);

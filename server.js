@@ -1,17 +1,22 @@
 const express = require('express');
-const connectDB = require('./config/db');
+const formData = require('express-form-data');
+//const connectDB = require('./config/db');
 const path = require('path');
 
 const app = express();
 
 //Connect Database
-connectDB();
+//connectDB();
+
+const contact = require('./routes/api/contact');
 
 // Init Middleware
 app.use(express.json({ extended: false }))
+app.use(express.urlencoded({ extended: false }));
+app.use(formData.parse())
 
 //Define Routes
-app.use('/api/users', require('./routes/api/users'));
+app.use('/api/contact', require('./routes/api/contact'));
 
 //Configuration for Express to behave correctly in production environment
 if (process.env.NODE_ENV === 'production') {
