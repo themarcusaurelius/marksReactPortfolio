@@ -36,6 +36,7 @@
     "express-form-data": "^2.0.10",
     "get-json": "^1.0.1",
     "mongoose": "^5.5.11",
+    "nodemon": "^2.0.4",
     "path": "^0.12.7"
   }
 }

@@ -45,9 +45,9 @@ class LandingPage extends React.Component {
               <GridItem xs={12} sm={6} md={6}>
                 <h1 className={classes.title}>Welcome to my world.</h1>
                 <h4>
-                  This site showcases and documents my ongoing journey as a Full-Stack Web Developer. 
-                  My portfolio includes multiple full stack deployed real-world applications as well as front-end and back-end applications highlighting the 
-                  use of specific skill sets and technologies. I hope you enjoy!
+                  This site showcases and documents my ongoing journey as a Full-Stack software developer. 
+                  My portfolio includes examples of multiple deployed applications as well as the 
+                  use of specific skill sets, languages, and technologies that I have gained professionally throughout my career. I hope you enjoy!
                 </h4>
                 <br />
                 <Link to="/profile-page">
