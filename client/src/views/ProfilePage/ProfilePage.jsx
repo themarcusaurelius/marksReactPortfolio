@@ -653,7 +653,7 @@ class ProfilePage extends React.Component {
                           <h4 className={classes.title}>Stats</h4>
                           <ul className={classes.listUnstyled}>
                             <li>
-                              <b>6</b> Deployments
+                              <b>8</b> Projects
                             </li>
                           </ul>
                           <hr />
