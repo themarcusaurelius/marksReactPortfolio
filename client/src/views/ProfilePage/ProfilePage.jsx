@@ -17,10 +17,8 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 // @material-ui/icons
 import fullStack from "@material-ui/icons/LaptopMac";
 import Add from "@material-ui/icons/AssignmentInd";
-import Code from "@material-ui/icons/Code"
 import BarChartIcon from '@material-ui/icons/BarChart';
 import TimelineIcon from '@material-ui/icons/Timeline';
-import ArtTrackIcon from '@material-ui/icons/ArtTrack';
 import WebAssetIcon from '@material-ui/icons/WebAsset';
 
 
@@ -41,18 +39,12 @@ import mark from "assets/img/faces/mark.jpg";
 import clicky from "assets/img/CCS.png";
 import offTheChain from "assets/img/OTC.png";
 import Dev from "assets/img/Dev.png";
-import friendFinder from "assets/img/FF.jpg";
-import quiz from "assets/img/Quiz.png";
 import Bamazon from "assets/img/Bamazon.gif";
 import Liri from "assets/img/liri.gif";
-import Bebop from "assets/img/Bebop.png";
 import GreenToad from "assets/img/GT.png";
-import Emaily from "assets/img/emaily.png";
-import Streamy from "assets/img/Streameo.png";
 import video from "assets/img/VID.png";
-import context from "assets/img/context.png";
 import api from "assets/img/api.gif";
-import reading from "assets/img/reading.png";
+import gql from "assets/img/gql.png";
 import apd from "assets/img/apd.png";
 import cv from 'assets/img/cv.png';
 import media from 'assets/img/media.png';
@@ -174,7 +166,7 @@ class ProfilePage extends React.Component {
                 color="primary"
                 tabs={[
                   {
-                    tabButton: "MERN",
+                    tabButton: "JavaScript",
                     tabIcon: fullStack,
                     tabContent: (
                       <GridContainer>
@@ -205,7 +197,7 @@ class ProfilePage extends React.Component {
                                   >
                                     January 2019
                                   </Badge>
-                                  <a href="https://greentoad.herokuapp.com/">
+                                  <a href="https://greentoad55.herokuapp.com/">
                                     <h2 className={classes.cardTitleWhite}>
                                       GreenToad
                                     </h2>
@@ -385,140 +377,6 @@ class ProfilePage extends React.Component {
                                 background
                                 style={{
                                   backgroundImage:
-                                    "url(" + Emaily + ")"
-                                }}
-                              >
-                                <a href="#mark" />
-                                <CardBody
-                                  background
-                                  className={classes.cardBody}
-                                >
-                                  <Badge
-                                    color="danger"
-                                    className={classes.badge}
-                                  >
-                                    May 2019
-                                  </Badge>
-                                  <a href="https://emailymailer.herokuapp.com">
-                                    <h2 className={classes.cardTitleWhite}>
-                                      Emaily
-                                    </h2>
-                                  </a>
-                                  <div>
-                                    <Button
-                                      href={"https://github.com/themarcusaurelius/emaily"}
-                                      justIcon
-                                      color="info"
-                                    >
-                                      <i className={classes.socials + " fab fa-github-alt"} />
-                                    </Button>
-                                  </div>
-                                </CardBody>
-                              </Card>
-                              <ExpansionPanel elevation={20}>
-                                <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-                                  <p className={classes.description}>
-                                    Full Stack app for sending mass emails to collect feedback. 
-                                  </p>
-                                </ExpansionPanelSummary>
-                                <h5 className={classes.title} id="title">Tech-Stack:</h5>
-                                <ExpansionPanelDetails id="details">
-                                  <Badge color="danger">React.js</Badge>
-                                  <Badge color="warning">Materialize-CSS</Badge>
-                                  <Badge color="rose">http-proxy-middleware</Badge>
-                                  <Badge color="primary">JavaScript</Badge>
-                                  <Badge color="warning">React Router 4</Badge>
-                                  <Badge color="info">0auth</Badge>
-                                  <Badge color="success">JSS</Badge>
-                                  <Badge color="danger">D3</Badge>
-                                  <Badge color="warning">ES6</Badge>
-                                  <Badge color="rose">Lodash</Badge>
-                                  <Badge color="primary">React-Redux</Badge>
-                                  <Badge color="info">React-Stripe-Checkout</Badge>
-                                  <Badge color="success">Redux</Badge>
-                                  <Badge color="danger">Redux-Form</Badge>
-                                  <Badge color="info">Redux-Thunk</Badge>
-                                  <Badge color="warning">MongoDB</Badge>
-                                  <Badge color="rose">Mongoose Schema</Badge>
-                                  <Badge color="primary">Node.js</Badge>
-                                  <Badge color="info">Express.js</Badge>
-                                  <Badge color="success">Passport.js</Badge>
-                                  <Badge color="danger">SendGrid</Badge>
-                                  <Badge color="info">Path-Parser</Badge>
-                                  <Badge color="warning">Local Tunnel</Badge>
-                                </ExpansionPanelDetails>
-                              </ExpansionPanel>
-                              <br /><br/><br /><br />
-                            </GridItem>
-                            <GridItem xs={12} sm={12} md={6}>
-                              <Card
-                                background
-                                style={{
-                                  backgroundImage:
-                                    "url(" + Streamy + ")"
-                                }}
-                              >
-                                <a href="https://drive.google.com/file/d/1QqLQrEK_nFegJ1Wp9QBrsvVX0mISG_nA/view" />
-                                <CardBody
-                                  background
-                                  className={classes.cardBody}
-                                >
-                                  <Badge
-                                    color="success"
-                                    className={classes.badge}
-                                  >
-                                    April 2019
-                                  </Badge>
-                                  <a href="https://drive.google.com/file/d/1QqLQrEK_nFegJ1Wp9QBrsvVX0mISG_nA/view">
-                                    <h2 className={classes.cardTitleWhite}>
-                                      Streamy
-                                    </h2>
-                                  </a>
-                                  <div>
-                                    <Button
-                                      href={"https://github.com/themarcusaurelius/streamy"}
-                                      justIcon
-                                      color="danger"
-                                    >
-                                      <i className={classes.socials + " fab fa-github-alt"} />
-                                    </Button>
-                                  </div>
-                                </CardBody>
-                              </Card>
-                              <ExpansionPanel elevation={20}>
-                                <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-                                  <p className={classes.description}>
-                                    Full-stack real-time streaming application with authentication.
-                                  </p>
-                                </ExpansionPanelSummary>
-                                <h5 className={classes.title} id="title">Tech-Stack:</h5>
-                                <ExpansionPanelDetails id="details">
-                                  <Badge color="danger">React.js</Badge>
-                                  <Badge color="success">Semantic UI</Badge>
-                                  <Badge color="warning">Youtube API</Badge>
-                                  <Badge color="rose">ES6</Badge>
-                                  <Badge color="primary">Google Auth</Badge>
-                                  <Badge color="info">Google API</Badge>
-                                  <Badge color="success">Redux</Badge>
-                                  <Badge color="danger">Async/Await</Badge>
-                                  <Badge color="warning">CRUD Methods</Badge>
-                                  <Badge color="rose">JSON Server</Badge>
-                                  <Badge color="primary">Node Media Server</Badge>
-                                  <Badge color="info">Lodash</Badge>
-                                  <Badge color="success">React Router 4</Badge>
-                                  <Badge color="primary">Redux-Form</Badge>
-                                  <Badge color="warning">Redux-Thunk</Badge>
-                                  <Badge color="rose">flv.js</Badge>
-                                </ExpansionPanelDetails>
-                              </ExpansionPanel>
-                              <br /><br/><br /><br />
-                            </GridItem>
-                            <GridItem xs={12} sm={12} md={6}>
-                              <Card
-                                elevation={20}
-                                background
-                                style={{
-                                  backgroundImage:
                                     "url(" + video + ")"
                                 }}
                               >
@@ -573,49 +431,11 @@ class ProfilePage extends React.Component {
                               </ExpansionPanel>
                               <br /><br/><br /><br />
                             </GridItem>
-                          </GridContainer>
-                        </GridItem>
-                        
-                        <GridItem
-                          xs={12}
-                          sm={12}
-                          md={2}
-                          className={classes.gridItem}
-                        >
-                          <h4 className={classes.title}>Stats</h4>
-                          <ul className={classes.listUnstyled}>
-                            <li>
-                              <b>6</b> Deployments
-                            </li>
-                          </ul>
-                          <hr />
-                          <h4 className={classes.title}>About this work</h4>
-                          <p className={classes.description}>
-                            These are a few of the Full-Stack MERN applications I have deployed. There are a variety of technologies 
-                            and skill sets used in these examples that highlight my capabilities as a Full-Stack developer.
-                          </p>
-                        </GridItem>
-                      </GridContainer>
-                    )
-                  },
-                  {
-                    tabButton: "Front-End",
-                    tabIcon: ArtTrackIcon,
-                    tabContent: (
-                      <GridContainer>
-                        <GridItem
-                          xs={12}
-                          sm={12}
-                          md={7}
-                          className={classes.gridItem}
-                        >
-                          <h4 className={classes.title}>Recent Work</h4>
-                          <GridContainer className={classes.collections}>
                             <GridItem xs={12} sm={12} md={6}>
                               <Card
                                 background
                                 style={{
-                                  backgroundImage: "url(" + context + ")"
+                                  backgroundImage: "url(" + gql + ")"
                                 }}
                               >
                                 <a href="https://github.com/themarcusaurelius/clicky" />
@@ -629,14 +449,14 @@ class ProfilePage extends React.Component {
                                   >
                                     December 2018
                                   </Badge>
-                                  <a href="https://contexttranslator.herokuapp.com/">
+                                  <a href="https://trailtoadgql.herokuapp.com/">
                                     <h2 className={classes.cardTitleWhite}>
-                                      Context
+                                      GraphQL
                                     </h2>
                                   </a>
                                   <div>
                                     <Button
-                                      href={"https://github.com/themarcusaurelius/translator"}
+                                      href={"https://github.com/themarcusaurelius/trailToad"}
                                       justIcon
                                       color="primary"
                                     >
@@ -648,18 +468,17 @@ class ProfilePage extends React.Component {
                               <ExpansionPanel elevation={20}>
                                 <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
                                   <p className={classes.description}>
-                                    Application using Context API with 
-                                    regards to state management.
+                                    Displaying product details with the BigCommerce GraphQL API.
                                   </p>
                                 </ExpansionPanelSummary>
                                 <h5 className={classes.title} id="title">Tech-Stack:</h5>
                                 <ExpansionPanelDetails id="details">
                                   <Badge color="danger">React.js</Badge>
-                                  <Badge color="rose">Context</Badge>
+                                  <Badge color="rose">GraphQL</Badge>
                                   <Badge color="primary">JavaScript</Badge>
                                   <Badge color="warning">ES6</Badge>
                                   <Badge color="primary">Node.js</Badge>
-                                  <Badge color="info">Semantic UI</Badge>
+                                  <Badge color="info">MDB</Badge>
                                   <Badge color="rose">Heroku</Badge>
                                 </ExpansionPanelDetails>
                               </ExpansionPanel>
@@ -722,310 +541,6 @@ class ProfilePage extends React.Component {
                               <Card
                                 background
                                 style={{
-                                  backgroundImage: "url(" + Bebop + ")"
-                                }}
-                              >
-                                <a href="#mark" />
-                                <CardBody
-                                  background
-                                  className={classes.cardBody}
-                                >
-                                  <Badge color="danger" className={classes.badge}>
-                                    October 2018
-                                  </Badge>
-                                  <a href="https://friendfinder555.herokuapp.com/">
-                                    <h2 className={classes.cardTitleWhite}>
-                                      Multiplayer
-                                    </h2>
-                                  </a>
-                                  <div>
-                                    <Button
-                                      href={"https://github.com/projectGreenbelt/GreenToad"}
-                                      justIcon
-                                      color="warning"
-                                    >
-                                      <i className={classes.socials + " fab fa-github-alt"} />
-                                    </Button>
-                                  </div>
-                                </CardBody>
-                              </Card>
-                              <ExpansionPanel elevation={20}>
-                                <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-                                  <p className={classes.description}>
-                                    JavaScript with jQuery multiplayer game.
-                                  </p>
-                                </ExpansionPanelSummary>
-                                <h5 className={classes.title} id="title">Tech-Stack:</h5>
-                                <ExpansionPanelDetails id="details">
-                                  <Badge color="danger">JavaScript</Badge>
-                                  <Badge color="rose">CSS</Badge>
-                                  <Badge color="primary">HTML5</Badge>
-                                  <Badge color="warning">jQuery</Badge>
-                                  <Badge color="success">Bootstrap 4</Badge>
-                                </ExpansionPanelDetails>
-                              </ExpansionPanel>
-                              <br /><br/><br /><br />
-                            </GridItem>
-                            <GridItem xs={12} sm={12} md={6}>
-                              <Card
-                                elevation={20}
-                                background
-                                style={{
-                                  backgroundImage:
-                                    "url(" + reading + ")"
-                                }}
-                              >
-                                <a href="#mark" />
-                                <CardBody
-                                  background
-                                  className={classes.cardBody}
-                                >
-                                  <Badge
-                                    color="danger"
-                                    className={classes.badge}
-                                  >
-                                    January 2019
-                                  </Badge>
-                                  <a href="https://marksreadinglist.herokuapp.com/">
-                                    <h2 className={classes.cardTitleWhite}>
-                                      CRUD Reading List
-                                    </h2>
-                                  </a>
-                                  <div>
-                                    <Button
-                                      href={"https://github.com/themarcusaurelius/ReadingList"}
-                                      justIcon
-                                      color="info"
-                                    >
-                                      <i className={classes.socials + " fab fa-github-alt"} />
-                                    </Button>
-                                  </div>
-                                </CardBody>
-                              </Card>
-                              <ExpansionPanel elevation={20}>
-                                <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-                                  <p className={classes.description}>
-                                    CRUD application letting users add/delete books to a reading list.
-                                  </p>
-                                </ExpansionPanelSummary>
-                                <h5 className={classes.title} id="title">Tech-Stack:</h5>
-                                <ExpansionPanelDetails id="details">
-                                  <Badge color="danger">React.js</Badge>
-                                  <Badge color="warning">Bootstrap 4</Badge>
-                                  <Badge color="rose">CSS</Badge>
-                                  <Badge color="primary">JavaScript</Badge>
-                                  <Badge color="success">JSS</Badge>
-                                  <Badge color="warning">ES6</Badge>
-                                  <Badge color="primary">Node.js</Badge>
-                                  <Badge color="danger">Express.js</Badge>
-                                  <Badge color="info">MongoDB</Badge>
-                                  <Badge color="success">React Router 4</Badge>
-                                  <Badge color="rose">Heroku</Badge>
-                                </ExpansionPanelDetails>
-                            </ExpansionPanel>
-                            <br /><br/><br /><br />
-                            </GridItem>
-                            <GridItem xs={12} sm={12} md={6}>
-                              <Card
-                                background
-                                style={{
-                                  backgroundImage: "url(" + quiz + ")"
-                                }}
-                              >
-                                <a href="#mark" />
-                                <CardBody
-                                  background
-                                  className={classes.cardBody}
-                                >
-                                  <Badge
-                                    color="info"
-                                    className={classes.badge}
-                                  >
-                                    September 2018
-                                  </Badge>
-                                  <a href="https://themarcusaurelius.github.io/TriviaGame/">
-                                    <h2 className={classes.cardTitleWhite}>
-                                      Trivia Game
-                                    </h2>
-                                  </a>
-                                  <div>
-                                    <Button
-                                      href={"https://github.com/themarcusaurelius/TriviaGame"}
-                                      justIcon
-                                      color="success"
-                                    >
-                                      <i className={classes.socials + " fab fa-github-alt"} />
-                                    </Button>
-                                  </div>
-                                </CardBody>
-                              </Card>
-                              <ExpansionPanel elevation={20}>
-                                <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-                                  <p className={classes.description}>
-                                    JavaScript with jQuery multiple-choice quiz.
-                                  </p>
-                                </ExpansionPanelSummary>
-                                <h5 className={classes.title} id="title">Tech-Stack:</h5>
-                                <ExpansionPanelDetails id="details">
-                                  <Badge color="danger">JavaScript</Badge>
-                                  <Badge color="rose">CSS</Badge>
-                                  <Badge color="primary">HTML5</Badge>
-                                  <Badge color="warning">jQuery</Badge>
-                                  <Badge color="success">Bootstrap 4</Badge>
-                                  <Badge color="info">Timers</Badge>
-                                </ExpansionPanelDetails>
-                              </ExpansionPanel>
-                              <br /><br/><br /><br />
-                            </GridItem>
-                            <GridItem xs={12} sm={12} md={6}>
-                              <Card
-                                background
-                                style={{
-                                  backgroundImage: "url(" + friendFinder + ")"
-                                }}
-                              >
-                                <a href="#mark" />
-                                <CardBody
-                                  background
-                                  className={classes.cardBody}
-                                >
-                                  <Badge
-                                    color="warning"
-                                    className={classes.badge}
-                                  >
-                                    September 2018
-                                  </Badge>
-                                  <a href="https://friendfinder555.herokuapp.com/survey">
-                                    <h2 className={classes.cardTitleWhite}>
-                                      Friend Match
-                                    </h2>
-                                  </a>
-                                  <div>
-                                    <Button
-                                      href={"https://github.com/themarcusaurelius/FriendFinder"}
-                                      justIcon
-                                      color="primary"
-                                    >
-                                      <i className={classes.socials + " fab fa-github-alt"} />
-                                    </Button>
-                                  </div>
-                                </CardBody>
-                              </Card>
-                              <ExpansionPanel elevation={20}>
-                                <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-                                  <p className={classes.description}>
-                                    Helps users find their most compatible friend. 
-                                  </p>
-                                </ExpansionPanelSummary>
-                                <h5 className={classes.title} id="title">Tech-Stack:</h5>
-                                <ExpansionPanelDetails id="details">
-                                  <Badge color="danger">JavaScript</Badge>
-                                  <Badge color="rose">CSS</Badge>
-                                  <Badge color="primary">HTML5</Badge>
-                                  <Badge color="warning">jQuery</Badge>
-                                  <Badge color="success">Bootstrap 4</Badge>
-                                  <Badge color="info">Node.js</Badge>
-                                  <Badge color="danger">Express.js</Badge>
-                                  <Badge color="rose">Heroku</Badge>
-                                </ExpansionPanelDetails>
-                            </ExpansionPanel>
-                            </GridItem>
-                          </GridContainer>
-                        </GridItem>
-                        <GridItem
-                          xs={12}
-                          sm={12}
-                          md={2}
-                          className={classes.gridItem}
-                        >
-                          <h4 className={classes.title}>Stats</h4>
-                          <ul className={classes.listUnstyled}>
-                            <li>
-                              <b>6</b> Challenges
-                            </li>
-                          </ul>
-                          <hr />
-                          <h4 className={classes.title}>About this work</h4>
-                          <p className={classes.description}>
-                            A few examples of front-end work that showcase various web development technologies such as 
-                            React.js, Vanilla JavaScript, jQuery, CSS, HTML, as well as higher order methods such as .map(). 
-                          </p>
-                        </GridItem>
-                      </GridContainer>
-                    )
-                  },
-                  {
-                    tabButton: "Back-End",
-                    tabIcon: Code,
-                    tabContent: (
-                      <GridContainer>
-                        <GridItem
-                          xs={12}
-                          sm={12}
-                          md={7}
-                          className={classes.gridItem}
-                        >
-                          <h4 className={classes.title}>Recent Work</h4>
-                          <GridContainer className={classes.collections}>
-                            <GridItem xs={12} sm={12} md={12}>
-                              <Card
-                                background
-                                style={{
-                                  backgroundImage: "url(" + api + ")"
-                                }}
-                              >
-                                <a href="#mark" />
-                                <CardBody
-                                  background
-                                  className={classes.cardBody}
-                                >
-                                  <Badge
-                                    color="danger"
-                                    className={classes.badge}
-                                  >
-                                    April 2019
-                                  </Badge>
-                                  <a href="https://drive.google.com/file/d/1v1dLR_0lRexp-A9rznxgnuFMYhHR3l2o/view">
-                                    <h2 className={classes.cardTitleWhite}>
-                                     CLI Klaviyo
-                                    </h2>
-                                  </a>
-                                  <div>
-                                    <Button
-                                      href={"https://github.com/themarcusaurelius/challenge"}
-                                      justIcon
-                                      color="primary"
-                                    >
-                                      <i className={classes.socials + " fab fa-github-alt"} />
-                                    </Button>
-                                  </div>
-                                </CardBody>
-                              </Card>
-                              <ExpansionPanel elevation={20}>
-                                <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-                                  <p className={classes.description}>
-                                    Node.js back-end application that makes POST/GET requests using
-                                    an API key to a Client's Klaviyo account.
-                                  </p>
-                              </ExpansionPanelSummary>
-                              <h5 className={classes.title} id="title">Tech-Stack:</h5>
-                              <ExpansionPanelDetails id="details">
-                                <Badge color="danger">JavaScript</Badge>
-                                <Badge color="success">Node.js</Badge>
-                                <Badge color="primary">Express.js</Badge>
-                                <Badge color="info">Body-Parser</Badge>
-                                <Badge color="rose">Cookie-Parser</Badge>
-                                <Badge color="warning">Request</Badge>
-                                <Badge color="danger">Klaviyo API</Badge>
-                                <Badge color="success">Postman</Badge>
-                              </ExpansionPanelDetails>
-                            </ExpansionPanel>
-                            <br /><br/><br /><br />
-                            </GridItem>
-                            <GridItem xs={12} sm={12} md={12}>
-                              <Card
-                                background
-                                style={{
                                   backgroundImage: "url(" + Bamazon + ")"
                                 }}
                               >
@@ -1056,8 +571,7 @@ class ProfilePage extends React.Component {
                               <ExpansionPanel elevation={20}>
                                 <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
                                   <p className={classes.description}>
-                                    Online store built through Node.js allowing users to buy available products through the command line. 
-                                    Handles current pricing, inventory, and updates inventory on sale.
+                                    Node.js store allowing users to buy available products through the command line. 
                                   </p>
                                 </ExpansionPanelSummary>
                                 <h5 className={classes.title} id="title">Tech-Stack:</h5>
@@ -1072,7 +586,7 @@ class ProfilePage extends React.Component {
                               </ExpansionPanel>
                               <br /><br/><br /><br />
                             </GridItem>
-                            <GridItem xs={12} sm={12} md={12}>
+                            <GridItem xs={12} sm={12} md={6}>
                               <Card
                                 background
                                 style={{
@@ -1109,8 +623,7 @@ class ProfilePage extends React.Component {
                               <ExpansionPanel elevation={20}>
                                 <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
                                   <p className={classes.description}>
-                                    Node.js app that takes in the user's commands/requests and returns the appropriate answer.
-                                    Set up to handle requests for Songs, Movies, and Concerts.
+                                    Set up to handle requests for Songs, Movies, and Concerts with Node.js.
                                   </p>
                                 </ExpansionPanelSummary>
                                 <h5 className={classes.title} id="title">Tech-Stack:</h5>
@@ -1127,7 +640,7 @@ class ProfilePage extends React.Component {
                                   <Badge color="warning">request</Badge>
                                   <Badge color="success">request-promise</Badge>
                                 </ExpansionPanelDetails>
-                            </ExpansionPanel>
+                              </ExpansionPanel>
                             </GridItem>
                           </GridContainer>
                         </GridItem>
@@ -1140,15 +653,14 @@ class ProfilePage extends React.Component {
                           <h4 className={classes.title}>Stats</h4>
                           <ul className={classes.listUnstyled}>
                             <li>
-                              <b>3</b> Challenges
+                              <b>6</b> Deployments
                             </li>
                           </ul>
                           <hr />
                           <h4 className={classes.title}>About this work</h4>
                           <p className={classes.description}>
-                            This section contains a few applications built with Node.js
-                            that handle user requests through the command line interface as well
-                            as working with API's to pull/push data from/to online sources. 
+                            These are a few of the JavaScript applications I have deployed. There are a variety of technologies 
+                            and skill sets used in these examples that highlight my capabilities as a Full-Stack developer.
                           </p>
                         </GridItem>
                       </GridContainer>
@@ -1535,188 +1047,188 @@ class ProfilePage extends React.Component {
                       </GridContainer>
                     )
                   },
-                  {
-                    tabButton: "Python",
-                    tabIcon: TimelineIcon,
-                    tabContent: (
-                      <GridContainer>
-                        <GridItem
-                          xs={12}
-                          sm={12}
-                          md={7}
-                          className={classes.gridItem}
-                        >
-                          <h4 className={classes.title}>Latest Work</h4>
-                          <GridContainer className={classes.collections}>
-                            <GridItem xs={12} sm={12} md={12}>
-                              <Card
-                                background
-                                style={{
-                                  backgroundImage: "url(" + api + ")"
-                                }}
-                              >
-                                <a href="#mark" />
-                                <CardBody
-                                  background
-                                  className={classes.cardBody}
-                                >
-                                  <Badge
-                                    color="danger"
-                                    className={classes.badge}
-                                  >
-                                    April 2019
-                                  </Badge>
-                                  <a href="https://drive.google.com/file/d/1v1dLR_0lRexp-A9rznxgnuFMYhHR3l2o/view">
-                                    <h2 className={classes.cardTitleWhite}>
-                                     CLI Post/Get
-                                    </h2>
-                                  </a>
-                                  <div>
-                                    <Button
-                                      href={"https://github.com/themarcusaurelius/challenge"}
-                                      justIcon
-                                      color="primary"
-                                    >
-                                      <i className={classes.socials + " fab fa-github-alt"} />
-                                    </Button>
-                                  </div>
-                                </CardBody>
-                              </Card>
-                              <p className={classes.description}>
-                                Node.js based back-end application that makes POST/GET requests using
-                                an API key to a Client's Klaviyo account.
-                              </p>
-                              <h5 className={classes.title}>Tech-Stack:</h5>
-                              <Badge color="danger">JavaScript</Badge>
-                              <Badge color="success">Node.js</Badge>
-                              <Badge color="primary">Express.js</Badge>
-                              <Badge color="info">Body-Parser</Badge>
-                              <Badge color="rose">Cookie-Parser</Badge>
-                              <Badge color="warning">Request</Badge>
-                              <Badge color="danger">Klaviyo API</Badge>
-                              <Badge color="success">Postman</Badge>
-                              <br /><br/><hr /><br /><br />
-                            </GridItem>
-                            <GridItem xs={12} sm={12} md={12}>
-                              <Card
-                                background
-                                style={{
-                                  backgroundImage: "url(" + Bamazon + ")"
-                                }}
-                              >
-                                <a href="https://drive.google.com/file/d/17M12_me-22Jigm525EIaB4wXT8C3rgYD/view" />
-                                <CardBody
-                                  background
-                                  className={classes.cardBody}
-                                >
-                                  <Badge color="info" className={classes.badge}>
-                                    October 2018
-                                  </Badge>
-                                  <a href="https://drive.google.com/file/d/17M12_me-22Jigm525EIaB4wXT8C3rgYD/view">
-                                    <h2 className={classes.cardTitleWhite}>
-                                      CLI Bamazon
-                                    </h2>
-                                  </a>
-                                  <div>
-                                    <Button
-                                      href={"https://github.com/themarcusaurelius/bamazon"}
-                                      justIcon
-                                      color="success"
-                                    >
-                                      <i className={classes.socials + " fab fa-github-alt"} />
-                                    </Button>
-                                  </div>
-                                </CardBody>
-                              </Card>
-                              <p className={classes.description}>
-                                Online store built through Node.js that allows users to buy available products through the command line. 
-                                Handles current pricing, inventory, and updates inventory on sale completion.
-                              </p>
-                              <h5 className={classes.title}>Tech-Stack:</h5>
-                              <Badge color="danger">JavaScript</Badge>
-                              <Badge color="rose">chalk</Badge>
-                              <Badge color="primary">dotenv</Badge>
-                              <Badge color="warning">inquirer</Badge>
-                              <Badge color="success">mysql</Badge>
-                              <Badge color="info">require</Badge>
-                              <br /><br/><hr /><br /><br />
-                            </GridItem>
-                            <GridItem xs={12} sm={12} md={12}>
-                              <Card
-                                background
-                                style={{
-                                  backgroundImage: "url(" + Liri + ")"
-                                }}
-                              >
-                                <a href="#mark" />
-                                <CardBody
-                                  background
-                                  className={classes.cardBody}
-                                >
-                                  <Badge
-                                    color="danger"
-                                    className={classes.badge}
-                                  >
-                                    October 2018
-                                  </Badge>
-                                  <a href="https://drive.google.com/file/d/19of5XCochenZgjEoihDpNh2Wl0arEGih/view">
-                                    <h2 className={classes.cardTitleWhite}>
-                                      CLI Liri
-                                    </h2>
-                                  </a>
-                                  <div>
-                                    <Button
-                                      href={"https://github.com/themarcusaurelius/liri-node-app"}
-                                      justIcon
-                                      color="info"
-                                    >
-                                      <i className={classes.socials + " fab fa-github-alt"} />
-                                    </Button>
-                                  </div>
-                                </CardBody>
-                              </Card>
-                              <p className={classes.description}>
-                                Node.js app that takes in the user's commands/requests and returns the appropriate answer.
-                                Set up to handle requests for Songs, Movies, and Concerts.
-                              </p>
-                              <h5 className={classes.title}>Tech-Stack:</h5>
-                              <Badge color="danger">JavaScript</Badge>
-                              <Badge color="rose">chalk-animation</Badge>
-                              <Badge color="primary">cryptiles</Badge>
-                              <Badge color="warning">dotenv</Badge>
-                              <Badge color="success">fs-extra</Badge>
-                              <Badge color="info">moment</Badge>
-                              <Badge color="danger">node spotify api</Badge>
-                              <Badge color="rose">omdb api</Badge>
-                              <Badge color="primary">bands in town api</Badge>
-                              <Badge color="warning">request</Badge>
-                              <Badge color="success">request-promise</Badge>
-                            </GridItem>
-                          </GridContainer>
-                        </GridItem>
-                        <GridItem
-                          xs={12}
-                          sm={12}
-                          md={2}
-                          className={classes.gridItem}
-                        >
-                          <h4 className={classes.title}>Stats</h4>
-                          <ul className={classes.listUnstyled}>
-                            <li>
-                              <b>3</b> Challenges
-                            </li>
-                          </ul>
-                          <hr />
-                          <h4 className={classes.title}>About this work</h4>
-                          <p className={classes.description}>
-                            This section contains a few applications built strictly with Node.js for the back-end
-                            that handle user requests through the command line interface as well
-                            as working with API calls to pull/push data from/to online sources. 
-                          </p>
-                        </GridItem>
-                      </GridContainer>
-                    )
-                  }
+                  // {
+                  //   tabButton: "Python",
+                  //   tabIcon: TimelineIcon,
+                  //   tabContent: (
+                  //     <GridContainer>
+                  //       <GridItem
+                  //         xs={12}
+                  //         sm={12}
+                  //         md={7}
+                  //         className={classes.gridItem}
+                  //       >
+                  //         <h4 className={classes.title}>Latest Work</h4>
+                  //         <GridContainer className={classes.collections}>
+                  //           <GridItem xs={12} sm={12} md={12}>
+                  //             <Card
+                  //               background
+                  //               style={{
+                  //                 backgroundImage: "url(" + api + ")"
+                  //               }}
+                  //             >
+                  //               <a href="#mark" />
+                  //               <CardBody
+                  //                 background
+                  //                 className={classes.cardBody}
+                  //               >
+                  //                 <Badge
+                  //                   color="danger"
+                  //                   className={classes.badge}
+                  //                 >
+                  //                   April 2019
+                  //                 </Badge>
+                  //                 <a href="https://drive.google.com/file/d/1v1dLR_0lRexp-A9rznxgnuFMYhHR3l2o/view">
+                  //                   <h2 className={classes.cardTitleWhite}>
+                  //                    CLI Post/Get
+                  //                   </h2>
+                  //                 </a>
+                  //                 <div>
+                  //                   <Button
+                  //                     href={"https://github.com/themarcusaurelius/challenge"}
+                  //                     justIcon
+                  //                     color="primary"
+                  //                   >
+                  //                     <i className={classes.socials + " fab fa-github-alt"} />
+                  //                   </Button>
+                  //                 </div>
+                  //               </CardBody>
+                  //             </Card>
+                  //             <p className={classes.description}>
+                  //               Node.js based back-end application that makes POST/GET requests using
+                  //               an API key to a Client's Klaviyo account.
+                  //             </p>
+                  //             <h5 className={classes.title}>Tech-Stack:</h5>
+                  //             <Badge color="danger">JavaScript</Badge>
+                  //             <Badge color="success">Node.js</Badge>
+                  //             <Badge color="primary">Express.js</Badge>
+                  //             <Badge color="info">Body-Parser</Badge>
+                  //             <Badge color="rose">Cookie-Parser</Badge>
+                  //             <Badge color="warning">Request</Badge>
+                  //             <Badge color="danger">Klaviyo API</Badge>
+                  //             <Badge color="success">Postman</Badge>
+                  //             <br /><br/><hr /><br /><br />
+                  //           </GridItem>
+                  //           <GridItem xs={12} sm={12} md={12}>
+                  //             <Card
+                  //               background
+                  //               style={{
+                  //                 backgroundImage: "url(" + Bamazon + ")"
+                  //               }}
+                  //             >
+                  //               <a href="https://drive.google.com/file/d/17M12_me-22Jigm525EIaB4wXT8C3rgYD/view" />
+                  //               <CardBody
+                  //                 background
+                  //                 className={classes.cardBody}
+                  //               >
+                  //                 <Badge color="info" className={classes.badge}>
+                  //                   October 2018
+                  //                 </Badge>
+                  //                 <a href="https://drive.google.com/file/d/17M12_me-22Jigm525EIaB4wXT8C3rgYD/view">
+                  //                   <h2 className={classes.cardTitleWhite}>
+                  //                     CLI Bamazon
+                  //                   </h2>
+                  //                 </a>
+                  //                 <div>
+                  //                   <Button
+                  //                     href={"https://github.com/themarcusaurelius/bamazon"}
+                  //                     justIcon
+                  //                     color="success"
+                  //                   >
+                  //                     <i className={classes.socials + " fab fa-github-alt"} />
+                  //                   </Button>
+                  //                 </div>
+                  //               </CardBody>
+                  //             </Card>
+                  //             <p className={classes.description}>
+                  //               Online store built through Node.js that allows users to buy available products through the command line. 
+                  //               Handles current pricing, inventory, and updates inventory on sale completion.
+                  //             </p>
+                  //             <h5 className={classes.title}>Tech-Stack:</h5>
+                  //             <Badge color="danger">JavaScript</Badge>
+                  //             <Badge color="rose">chalk</Badge>
+                  //             <Badge color="primary">dotenv</Badge>
+                  //             <Badge color="warning">inquirer</Badge>
+                  //             <Badge color="success">mysql</Badge>
+                  //             <Badge color="info">require</Badge>
+                  //             <br /><br/><hr /><br /><br />
+                  //           </GridItem>
+                  //           <GridItem xs={12} sm={12} md={12}>
+                  //             <Card
+                  //               background
+                  //               style={{
+                  //                 backgroundImage: "url(" + Liri + ")"
+                  //               }}
+                  //             >
+                  //               <a href="#mark" />
+                  //               <CardBody
+                  //                 background
+                  //                 className={classes.cardBody}
+                  //               >
+                  //                 <Badge
+                  //                   color="danger"
+                  //                   className={classes.badge}
+                  //                 >
+                  //                   October 2018
+                  //                 </Badge>
+                  //                 <a href="https://drive.google.com/file/d/19of5XCochenZgjEoihDpNh2Wl0arEGih/view">
+                  //                   <h2 className={classes.cardTitleWhite}>
+                  //                     CLI Liri
+                  //                   </h2>
+                  //                 </a>
+                  //                 <div>
+                  //                   <Button
+                  //                     href={"https://github.com/themarcusaurelius/liri-node-app"}
+                  //                     justIcon
+                  //                     color="info"
+                  //                   >
+                  //                     <i className={classes.socials + " fab fa-github-alt"} />
+                  //                   </Button>
+                  //                 </div>
+                  //               </CardBody>
+                  //             </Card>
+                  //             <p className={classes.description}>
+                  //               Node.js app that takes in the user's commands/requests and returns the appropriate answer.
+                  //               Set up to handle requests for Songs, Movies, and Concerts.
+                  //             </p>
+                  //             <h5 className={classes.title}>Tech-Stack:</h5>
+                  //             <Badge color="danger">JavaScript</Badge>
+                  //             <Badge color="rose">chalk-animation</Badge>
+                  //             <Badge color="primary">cryptiles</Badge>
+                  //             <Badge color="warning">dotenv</Badge>
+                  //             <Badge color="success">fs-extra</Badge>
+                  //             <Badge color="info">moment</Badge>
+                  //             <Badge color="danger">node spotify api</Badge>
+                  //             <Badge color="rose">omdb api</Badge>
+                  //             <Badge color="primary">bands in town api</Badge>
+                  //             <Badge color="warning">request</Badge>
+                  //             <Badge color="success">request-promise</Badge>
+                  //           </GridItem>
+                  //         </GridContainer>
+                  //       </GridItem>
+                  //       <GridItem
+                  //         xs={12}
+                  //         sm={12}
+                  //         md={2}
+                  //         className={classes.gridItem}
+                  //       >
+                  //         <h4 className={classes.title}>Stats</h4>
+                  //         <ul className={classes.listUnstyled}>
+                  //           <li>
+                  //             <b>3</b> Challenges
+                  //           </li>
+                  //         </ul>
+                  //         <hr />
+                  //         <h4 className={classes.title}>About this work</h4>
+                  //         <p className={classes.description}>
+                  //           This section contains a few applications built strictly with Node.js for the back-end
+                  //           that handle user requests through the command line interface as well
+                  //           as working with API calls to pull/push data from/to online sources. 
+                  //         </p>
+                  //       </GridItem>
+                  //     </GridContainer>
+                  //   )
+                  // }
                 ]}
               />
             </div>
